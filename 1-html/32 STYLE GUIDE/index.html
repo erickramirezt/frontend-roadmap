@@ -1,0 +1,244 @@
+<!-- HTML STYLE GUIDE -->
+<!-- A CONSISTENT, CLEAN, AND TIDY HTML CODE MAKES IT EASIER FOR OTHERS TO READ AND UNDERSTAND YOUR CODE -->
+
+<!-- ALWAYS DECLARE DOCUMENT TYPE -->
+<!-- ALWAYS DECLARE THE DOCUMENT TYPE AS THE FIRST LINE IN YOUR DOCUMENT -->
+<!-- THE CORRECT DOCUMENT TYPE FOR HTML IS -->
+<!DOCTYPE html>
+
+<!-- USE LOWERCASE ELEMENT NAMES -->
+<!-- HTML ALLOWS MIXING UPPERCASE NAD LOWERCASE LETTERS IN ELEMENT NAMES -->
+<!-- HOWEVER, WE RECOMMEND USING LOWERCASE ELEMENT NAMES -->
+<!-- MIXING UPPERCASE AND LOWERCASE NAME LOOKS BAD -->
+<!-- DEVELOPERS NORMALLY USE LOWERCASE NAMES -->
+<!-- LOWERCASE LOOKS CLEANER -->
+<!-- LOWERCASE IS EASIER TO WRITE -->
+<!-- GOOD -->
+<body>
+  <h1>My First Heading</h1>
+  <p>My first paragraph.</p>
+</body>
+
+<!-- BAD -->
+<body>
+  <h1>My First Heading</h1>
+  <p>My first paragraph.</p>
+</body>
+
+<!-- CLOSE ALL HTML ELEMENTS -->
+<!-- IN HTML, YOU DO NOT HAVE TO CLOSE ALL ELEMENTS -->
+<!-- HOWEVER, WE RECOMMEND THAT YOU CLOSE ALL HTML ELEMENTS, LIKE THIS -->
+<!-- GOOD -->
+<body>
+  <p>This is a paragraph</p>
+  <p>This is a paragraph</p>
+</body>
+
+<!-- BAD -->
+<!-- <body>
+  <p>This is a paragraph
+  <p>This is a paragraph
+</body> -->
+
+<!-- USE LOWERCASE ATTRIBUTE NAMES -->
+<!-- HTML ALLOWS MIXING UPPERCASE AND LOWERCASE LETTERS IN ATTRIBUTE NAMES -->
+<!-- HOWEVER, WE RECOMMEND USING LOWERCASE ATTRIBUTE NAMES -->
+<!-- MIXING UPPERCASE AND LOWERCASE NAMES LOOKS BAD -->
+<!-- DEVELOPERS NORMALLY USE LOWERCASE NAMES -->
+<!-- LOWERCASE LOOKS CLEANER -->
+<!-- LOWERCASE IS EASIER TO WRITE -->
+<!-- GOOD -->
+<a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+
+<!-- BAD -->
+<a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+
+<!-- ALWAYS QUOTE ATTRIBUTE VALUES -->
+<!-- HTML ALLOWS ATTRIBUTE VALUES WITHOUT QUOTES -->
+<!-- HOWEVER, WE RECOMMEND USING QUOTES AROUND ATTRIBUTE VALUES -->
+<!-- DEVELOPERS NORMALLY QUOTE ATTRIBUTE VALUES -->
+<!-- QUOTED VALUES ARE EASIER TO READ -->
+<!-- YOU MUST USE QUOTES IF THE VALUE CONTAINS SPACES -->
+<!-- GOOD -->
+<table class="striped"></table>
+
+<!-- BAD -->
+<table class="striped"></table>
+
+<!-- VERY BAD -->
+<table class="table" striped></table>
+
+<!-- ALWAYS SPECIFY ALT FOR IMAGES -->
+<!-- ALWAYS SPECIFY THE ALT ATTRIBUTE FOR IMAGES. THIS ATTRIBUTE IS IMPORTANT IF THE IMAGE FOR SOME REASON CANNOT
+BE DISPLAYED -->
+<!-- GOOD -->
+<img src="img_chania.jpg" alt="Flowers in Chania" />
+
+<!-- BAD -->
+<img src="img_chania.jpg" />
+
+<!-- SPACES AND EQUAL SIGNS -->
+<!-- HTML ALLOW SPACES AROUND EQUAL SIGNS. BUT SPACE-LESS IS EASIER TO READ AND GROUPS ENTITIES BETTER TOGETHER -->
+<!-- GOOD -->
+<link rel="stylesheet" href="styles.css" />
+
+<!-- BAD -->
+<link rel="stylesheet" href="styles.css" />
+
+<!-- AVOID LONG CODE LINES -->
+<!-- WHEN USING AN HTML EDITOR, IT IS NOT CONVENIENT TO SCROLL RIGHT AND LEFT TO READ THE HTML CODE -->
+
+<!-- BLANK LINES AND INDENTATION -->
+<!-- DO NOT ADD BLANK LINES, SPACES, OR IDENTATIONS WITHOUT A REASON -->
+<!-- FOR READABILITY, ADD BLANK LINES TO SEPARATE LARGE OR LOGICAL CODE BLOCKS -->
+<!-- FOR READABILITY, ADD TWO SPACES OF IDENTATION. DO NOT USE THE TAB KEY -->
+<!-- GOOD -->
+<body>
+  <h1>Famous Cities</h1>
+
+  <h2>Tokyo</h2>
+  <p>
+    Tokyo is the capital of Japan, the center of the Greater Tokyo Area, and the
+    most populous metropolitan area in the world.
+  </p>
+
+  <h2>London</h2>
+  <p>
+    London is the capital city of England. It is the most populous city in the
+    United Kingdom.
+  </p>
+
+  <h2>Paris</h2>
+  <p>
+    Paris is the capital of France. The Paris area is one of the largest
+    population centers in Europe.
+  </p>
+</body>
+
+<!-- BAD -->
+<body>
+  <h1>Famous Cities</h1>
+  <h2>Tokyo</h2>
+  <p>
+    Tokyo is the capital of Japan, the center of the Greater Tokyo Area, and the
+    most populous metropolitan area in the world.
+  </p>
+  <h2>London</h2>
+  <p>
+    London is the capital city of England. It is the most populous city in the
+    United Kingdom.
+  </p>
+  <h2>Paris</h2>
+  <p>
+    Paris is the capital of France. The Paris area is one of the largest
+    population centers in Europe.
+  </p>
+</body>
+
+<!-- GOOD TABLE EXAMPLE -->
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>Description of A</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>Description of B</td>
+  </tr>
+</table>
+
+<!-- GOOD LIST EXAMPLE -->
+<ul>
+  <li>London</li>
+  <li>Paris</li>
+  <li>Tokyo</li>
+</ul>
+
+<!-- NEVER SKIP THE <title> ELEMENT -->
+<!-- THE <title> ELEMENT IS REQUIRED IN HTML -->
+<!-- THE CONTENTS OF A PAGE TITLE IS VERY IMPORTANT FOR SEARCH ENGINE OPTIMIZATION (SEO)! THE PAGE TITLE IS USED 
+    BY SEARCH ENGINE ALGORITHMS TO DECIDE THE ORDER WHEN LISTING PAGES IN SEARCH RESULTS -->
+<!-- THE <title> ELEMENT -->
+<!-- DEFINES A TITLE IN THE BROWSER TOOLBAR -->
+<!-- PROVIDES A TITLE FOR THE PAGE WHEN IT IS ADDED TO FAVORITES -->
+<!-- DISPLAYS A TITLE FOR THE PAGE IN SEARCH-ENGINE RESULTS -->
+<title>HTML Style Guide and Coding Conventions</title>
+
+<!-- OMITTING <html> AND <body>? -->
+<!-- AN HTML APGE WILL VALIDATE WITHOUT THE <html> AND <body> TAGS -->
+<!-- EXAMPLE -->
+<!DOCTYPE html>
+<head>
+  <title>Page Title</title>
+</head>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+<!-- HOWEVER, WE RECOMMEND THAT YOU ALWAYS INCLUDE THE <html> AND <body> TAGS -->
+<!-- OMITTING <body> CAN PRODUCE ERRORS IN OLDER BROWSERS -->
+<!-- OMITTIN <html> AND <body> CAN ALSO CRASH DOM AND XML SOFTWARE -->
+
+<!-- OMMITING <head>? -->
+<!-- THE HTML <head> TAG CAN ALSO BE OMITTED -->
+<!-- BROWSERS WILL ADD ALL ELEMENTS BEFORE <body>, TO A DEFAULT <head> ELEMENT -->
+<!-- EXAMPLE -->
+<!DOCTYPE html>
+<html>
+  <title>Page Title</title>
+  <body>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+  </body>
+</html>
+<!-- HOWEVER, WE RECOMMEND USING THE <head> TAG -->
+
+<!-- CLOSE EMPTY HTML ELEMENTS -->
+<!-- IN HTML, IT IS OPTIONAL TO CLOSE EMPTY ELEMENTS -->
+<!-- ALLOWED -->
+<!-- <meta charset="utf-8"> -->
+
+<!-- ALSO ALLOWED -->
+<meta charset="utf-8" />
+<!-- IF YOU EXPECT XML/XHTML SOFTWARE TO ACCESS YOUR PAGE, KEEP THE CLOSING SLASH (/), BECAUSE IT IS REQUIRED IN
+XML AND XHTML -->
+
+<!-- ADD THE LANG ATTRIBUTE -->
+<!-- YOU SHOULD ALWAYS INCLUDE THE LANG ATTRIBUTE INSIDE THE <html> TAG, TO DECLARE THE LANGUAGE OF THE WEB PAGE -->
+<!-- THIS IS MEANT TO ASSIST SEARCH ENGINES AND BROWSERS -->
+<!-- EXAMPLE -->
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+  </body>
+</html>
+
+<!-- META DATA -->
+<!-- TO ENSURE PROPER INTERPRETATION AND CORRECT SEARCH ENGINE INDEXING, BOTH THE LANGUAGE AND THE CHARACTER 
+    ENCODING <meta charset="charset"> SHOULD BE DEFINED AS EARLY AS POSSIBLE IN AN HTML DOCUMENT -->
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Page Title</title>
+  </head>
+</html>
+
+<!-- SETTING THE VIEWPORT -->
+<!-- THE VIEWPORT IS THE USER'S VISIBLE AREA OF A WEB PAGE. IT VARIES WITH THE DEVICE - IT WILL BE SMALLER ON A 
+MOBILE PHONE THAN ON A COMPUTER SCREEN -->
+<!-- YOU SHOULD INCLUDE THE FOLLOWING <meta> ELEMENT IN ALL YOUR WEB PAGES -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- THIS GIVES THE BROWSER INSTRUCTIONS ON HOW TO CONTROL THE PAGE'S DIMENSIONS AND SCALING -->
+<!-- THE WIDTH=DEVICE-WIDTH PART SETS THE WIDTH OF THE PAGE TO FOLLOW THE SCREEN-WIDTH OF THE DEVICE (WHICH WILL
+    VARY DEPENDING ON THE DEVICE) -->
+<!-- THE INITIAL-SCALE=1.0 PART SETS THE INITIAL ZOOM LEVEL WHEN THE PAGE IS FIRST LOADED BY THE BROWSER -->

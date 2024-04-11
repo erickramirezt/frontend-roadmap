@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="py-1 px-2">
+      <h1>justify content</h1>
+      <p>
+        utilities for controlling how flex and grid items are positioned along a
+        container's main axis
+      </p>
+      <br />
+      <h2>start</h2>
+      <p>
+        use justify-start to justify items against the start of the container's
+        main axis
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="flex justify-start space-x-4 font-mono text-white text-sm font-bold leading-6 bg-stripes-fuchsia rounded-lg"
+        >
+          <div
+            class="w-14 h-14 rounded-lg flex items-center justify-center bg-fuchsia-500 shadow-lg"
+          >
+            01
+          </div>
+          <div
+            class="w-14 h-14 rounded-lg flex items-center justify-center bg-fuchsia-500 shadow-lg"
+          >
+            02
+          </div>
+          <div
+            class="w-14 h-14 rounded-lg flex items-center justify-center bg-fuchsia-500 shadow-lg"
+          >
+            03
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>center</h2>
+      <p>
+        use justify-center to justify items along the center of the container's
+        main axis
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="flex justify-start space-x-4 font-mono text-white text-sm font-bold leading-6 bg-stripes-fuchsia rounded-lg"
+        >
+          <div
+            class="w-14 h-14 rounded-lg flex items-center justify-center bg-fuchsia-500 shadow-lg"
+          >
+            01
+          </div>
+          <div
+            class="w-14 h-14 rounded-lg flex items-center justify-center bg-fuchsia-500 shadow-lg"
+          >
+            02
+          </div>
+          <div
+            class="w-14 h-14 rounded-lg flex items-center justify-center bg-fuchsia-500 shadow-lg"
+          >
+            03
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>end</h2>
+      <p>
+        use justify-end to justify items against the end of the container's main
+        axis
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="flex justify-end space-x-4 font-mono text-white text-sm font-bold leading-6 bg-stripes-cyan rounded-lg"
+        >
+          <div
+            class="w-14 h-14 rounded-lg flex items-center justify-center bg-cyan-500 shadow-lg"
+          >
+            01
+          </div>
+          <div
+            class="w-14 h-14 rounded-lg flex items-center justify-center bg-cyan-500 shadow-lg"
+          >
+            02
+          </div>
+          <div
+            class="w-14 h-14 rounded-lg flex items-center justify-center bg-cyan-500 shadow-lg"
+          >
+            03
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>space between</h2>
+      <p>
+        use justify-between to justify items evenly along the container's main
+        axis such that there is an equal amount of space between each item
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="flex justify-between space-x-4 font-mono text-white text-sm font-bold leading-6 bg-stripes-pink rounded-lg"
+        >
+          <div
+            class="w-14 h-14 rounded-lg flex items-center justify-center bg-pink-500 shadow-lg"
+          >
+            01
+          </div>
+          <div
+            class="w-14 h-14 rounded-lg flex items-center justify-center bg-pink-500 shadow-lg"
+          >
+            02
+          </div>
+          <div
+            class="w-14 h-14 rounded-lg flex items-center justify-center bg-pink-500 shadow-lg"
+          >
+            03
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>space around</h2>
+      <p>
+        use justify-around to justify items along the container's main axis such
+        that there is an equal amount of space around each item
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="flex justify-around space-x-4 font-mono text-white text-sm font-bold leading-6 bg-stripes-purple rounded-lg"
+        >
+          <div
+            class="w-14 h-14 rounded-lg flex items-center justify-center bg-purple-500 shadow-lg"
+          >
+            01
+          </div>
+          <div
+            class="w-14 h-14 rounded-lg flex items-center justify-center bg-purple-500 shadow-lg"
+          >
+            02
+          </div>
+          <div
+            class="w-14 h-14 rounded-lg flex items-center justify-center bg-purple-500 shadow-lg"
+          >
+            03
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>space evenly</h2>
+      <p>
+        use justify-evenly to justify items along the container's main axis such
+        that there is an equal amount of space around each item, but also
+        accounting for the doubling of space you would normally see between each
+        item when using justify-around
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="flex justify-evenly space-x-4 font-mono text-white text-sm font-bold leading-6 bg-stripes-indigo rounded-lg"
+        >
+          <div
+            class="w-14 h-14 rounded-lg flex items-center justify-center bg-indigo-500 shadow-lg"
+          >
+            01
+          </div>
+          <div
+            class="w-14 h-14 rounded-lg flex items-center justify-center bg-indigo-500 shadow-lg"
+          >
+            02
+          </div>
+          <div
+            class="w-14 h-14 rounded-lg flex items-center justify-center bg-indigo-500 shadow-lg"
+          >
+            03
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>stretch</h2>
+      <p>
+        use justify-stretch to allow content items to fill the available space
+        along the container's main axis
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="grid grid-flow-col justify-stretch gap-4 font-mono text-white text-sm font-bold leading-6 bg-stripes-fuchsia rounded-lg"
+        >
+          <div
+            class="h-14 rounded-lg flex items-center justify-center bg-fuchsia-500 shadow-lg"
+          >
+            01
+          </div>
+          <div
+            class="h-14 rounded-lg flex items-center justify-center bg-fuchsia-500 shadow-lg"
+          >
+            02
+          </div>
+          <div
+            class="h-14 rounded-lg flex items-center justify-center bg-fuchsia-500 shadow-lg"
+          >
+            03
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>normal</h2>
+      <p>
+        use justify-normal to pack content items in their default position as if
+        no justify-content value was set
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="flex justify-normal space-x-4 font-mono text-white text-sm font-bold leading-6 bg-stripes-blue rounded-lg"
+        >
+          <div
+            class="w-14 h-14 rounded-lg flex items-center justify-center bg-blue-500 shadow-lg"
+          >
+            01
+          </div>
+          <div
+            class="w-14 h-14 rounded-lg flex items-center justify-center bg-blue-500 shadow-lg"
+          >
+            02
+          </div>
+          <div
+            class="w-14 h-14 rounded-lg flex items-center justify-center bg-blue-500 shadow-lg"
+          >
+            03
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

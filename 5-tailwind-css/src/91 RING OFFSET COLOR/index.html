@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="py-1 px-2">
+      <h1>ring offset color</h1>
+      <p>utilities for controlling the color of outline ring offsets</p>
+      <br />
+      <h2>setting the ring offset color</h2>
+      <p>
+        use the ring-offset-{color} utilities to change the color of a ring
+        offset. usually this is done to try and match the offset to the parent
+        background color, since true box-shadow offsets aren't actually possible
+        in css
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="grid place-content-center text-white text-sm text-center font-bold leading-6"
+        >
+          <div class="flex flex-col items-center shrink-0">
+            <p
+              class="font-medium text-sm font-mono text-slate-500 text-center mb-3 dark:text-slate-400"
+            >
+              <span class="dark:hidden">ring-offset-slate-50</span>
+              <span class="hidden dark:inline">dark:ring-offset-slate-900</span>
+            </p>
+            <button
+              class="px-4 py-2 font-semibold text-sm bg-white text-slate-700 border border-slate-300 rounded-md shadow-sm ring-2 ring-offset-4 ring-offset-slate-50 ring-purple-500 dark:bg-slate-700 dark:text-slate-200 dark:border-transparent dark:ring-offset-slate-900"
+            >
+              Save Changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

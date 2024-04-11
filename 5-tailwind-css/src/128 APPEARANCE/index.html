@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="py-1 px-2">
+      <h1>appearance</h1>
+      <p>utilities for suppresing native form control styling</p>
+      <br />
+      <h2>removing default element appearance</h2>
+      <p>
+        use appearance-none to reset any browser specific styling on an element.
+        this utility is often used when creating custom form components
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div class="max-w-sm mx-auto items-center">
+          <div class="flex my-6">
+            <select class="w-16">
+              <option>Yes</option>
+              <option>No</option>
+              <option>Maybe</option>
+            </select>
+            <div
+              class="mx-6 text-slate-900 text-sm font-semibold dark:text-slate-200"
+            >
+              Default browser styles applied
+            </div>
+          </div>
+          <div class="flex my-6 items-center">
+            <select class="appearance-none w-16">
+              <option>Yes</option>
+              <option>No</option>
+              <option>Maybe</option>
+            </select>
+            <div
+              class="mx-6 text-slate-900 text-sm font-semibold dark:text-slate-200"
+            >
+              Default styles removed
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

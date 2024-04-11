@@ -1,0 +1,94 @@
+<!-- HTML FORMS -->
+<!-- AN HTML FORM IS USED TO COLLECT USER INPUT. THE USER IS MOST OFTEN SENT TO A SERVER FOR PROCESSING -->
+
+<!-- THE <form> ELEMENT -->
+<!-- THE HTML <form> ELEMENT DEFINES A FORM THAT IS USED TO COLLECT USER INPUT: -->
+<form>
+  <!-- form elements -->
+</form>
+<!-- THE <form> ELEMENT IS A CONTAINER FOR DIFFERENT TYPES OF INPUT ELEMENTS, SUCH AS: TEXT FIELDS, CHECKBOXES, 
+    RADIO BUTTONS, SUBMIT BUTTONS, ETC -->
+
+<!-- THE <input> ELEMENT -->
+<!-- THE HTML <input> ELEMENT IS THE MOST USED FORM ELEMENT. 
+    AN <input> ELEMENT CAN BE DISPLAYED IN MANY WAYS, DEPENDING ON THE TYPE ATTRIBUTE. -->
+<!-- HERE ARE SOME EXAMPLES -->
+<!-- <input type="text">    DISPLAYS A SINGLE-LINE TEXT INPUT FIELD -->
+<!-- <input type="radio">   DISPLAYS A RADIO BUTTON (FOR SELECTING ONE OF MANY CHOICES) -->
+<!-- <input type="checkbox">    DISPLAYS A CHECKBOX (FOR SELECTING ZERO OR MORE OF MANY CHOICES) -->
+<!-- <input type="submit">  DISPLAYS A SUBMIT BUTTON (FOR SUBMITTING THE FORM) -->
+<!-- <input type="button">  DISPLAYS A BUTTON (CAN BE USED WITH A JavaScript TO CREATE A BUTTON CONTROL) -->
+
+<!-- TEXT FIELDS -->
+<!-- THE <input type="text"> DEFINES A SINGLE-LINE INPUT FIELD FOR TEXT INPUT -->
+<!-- EXAMPLE -->
+<form>
+  <label for="fname">First name:</label><br />
+  <input type="text" id="fname" name="fname" /><br />
+  <label for="lname">Last name:</label><br />
+  <input type="text" id="lname" name="lname" />
+</form>
+<!-- NOTE: THE FORM ITSELF IS NOT VISIBLE. ALSO NOTE THAT THE DEFAULT WIDTH OF AN INPUT FIELD IS 20 CHARACTERS -->
+
+<!-- THE <label> ELEMENT -->
+<!-- NOTICE THE USE OF THE <label> ELEMENT IN THE EXAMPLE ABOVE. 
+    THE <label> TAG DEFINES A LABEL FOR MANY FORM ELEMENTS -->
+<!-- THE <label> ELEMENT IS USEFUL FOR SCREEN-READER USERS, BECAUSE THE SCREEN-READER WILL READ OUT LOUD THE LABEL 
+    WHEN THE USER FOCUSES ON THE INPUT ELEMENT -->
+<!-- THE <label> ELEMENT ALSO HELPS USERS WHO HAVE DIFFICULTY CLICKING ON VERY SMALL REGIONS (SUCH AS RADIO BUTTONS)
+    OR CHECKBOXES) - BECAUSE WHEN THE USER CLICKS THE TEXT WITHIN THE <labeL> ELEMENT, IT TOGGLES THE RADIO BUTTON/
+    CHECKBOX -->
+<!-- THE FOR ATTRIBUTE OF THE LABEL TAG SHOULD BE EQUAL TO THE ID ATRIBUTTE OF THE <input> ELEMENT TO BIND THEM 
+    TOGETHER -->
+
+<!-- RADIO BUTTONS -->
+<!-- THE <input type="radio"> DEFINES A RADIO BUTTON -->
+<!-- RADIO BUTTONS LET A USER SELECT ONE OF A LIMITED NUMBER OF CHOICES -->
+<!-- EXAMPLE -->
+<p>Choose your favorite Web language:</p>
+
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML" />
+  <label for="html">HTML</label><br />
+  <input type="radio" id="css" name="fav_language" value="CSS" />
+  <label for="css">CSS</label><br />
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript" />
+  <label for="javascript">JavaScript</label>
+</form>
+
+<!-- CHECKBOXES -->
+<!-- THE <input type="checkbox"> DEFINES A CHECKBOX -->
+<!-- CHECKBOXES LET A USER SELECT ZERO OR MORE OPTIONS OF A LIMITED NUMBER OF CHOICES -->
+<!-- EXAMPLE -->
+<form>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+  <label for="vehicle1"> I have a bike</label><br />
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+  <label for="vehicle2"> I have a car</label><br />
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+  <label for="vehicle3"> I have a boat</label>
+</form>
+
+<!-- SUBMIT BUTTON -->
+<!-- THE <input type="submit"> DEFINES A BUTTON FOR SUBMITTING THE FORM DATA TO A FORM-HANDLER -->
+<!-- THE FORM-HANDLERIS TYPICALLY A FILE ON THE SERVER WITH A SCRIPT FOR PROCESSING INPUT DATA -->
+<!-- THE FORM-HANDLER IS SPECIFIED IN THE FORM'S ACTION ATTRIBUTE -->
+<!-- EXAMPLE -->
+<form>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+  <label for="vehicle1"> I have a bike</label><br />
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+  <label for="vehicle2"> I have a car</label><br />
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+  <label for="vehicle3"> I have a boat</label>
+</form>
+
+<!-- THE NAME ATTRIBUTE FOR <input> -->
+<!-- NOTICE THAT EACH INPUT FIELD MUST HAVE A NAME ATTRIBUTE TO BE SUBMITTED -->
+<!-- IF THE NAME ATTRIBUTE IS OMITTED, THE INPUT FIELD WILL NOT BE SENT AT ALL -->
+<!-- EXAMPLE -->
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br />
+  <input type="text" id="fname" value="John" /><br /><br />
+  <input type="submit" value="Submit" />
+</form>

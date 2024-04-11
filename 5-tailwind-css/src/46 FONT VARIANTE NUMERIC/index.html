@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="py-1 px-2">
+      <h1>font variant numeric</h1>
+      <p>utilities for controlling the variant of numbers</p>
+      <br />
+      <h2>ordinal</h2>
+      <p>
+        use the ordinal utility to enable special glyphs for the ordinal numbers
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <p
+          class="font-source ordinal text-center text-slate-900 text-lg dark:text-slate-200"
+        >
+          1st
+        </p>
+      </div>
+      <br />
+      <h2>slashed zero</h2>
+      <p>
+        use the slashed-zero utility to force a 0 with a slash; this is useful
+        when a clear destinction between O and 0 is needed
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <p
+          class="font-source slashed-zero text-center text-slate-900 text-lg dark:text-slate-200"
+        >
+          0
+        </p>
+      </div>
+      <br />
+      <h2>lining figures</h2>
+      <p>
+        use the lining-nums utility to use the numeric glyphs that are all
+        aligned by their baseline. this corresponds to the lnum opentype
+        features. this is the default for most fonts
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <p
+          class="font-source lining-nums text-center text-slate-900 text-lg dark:text-slate-200"
+        >
+          1234567890
+        </p>
+      </div>
+      <br />
+      <h2>oldstyle figures</h2>
+      <p>
+        use the oldstyle-nums utility to use numeric glyphs where some numbers
+        have descenders. this corresponds to the onum opentype feature
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <p
+          class="font-source oldstyle-nums text-center text-slate-900 text-lg dark:text-slate-200"
+        >
+          1234567890
+        </p>
+      </div>
+      <br />
+      <h2>proportional figures</h2>
+      <p>
+        use the proportional-nums utility to use numeric glyphs that have
+        proportional widths (rather than uniform/tabular). this corresponds to
+        the pnum opentype feature
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div class="max-w-sm text-right">
+          <p
+            class="font-source proportional-nums text-slate-900 text-lg dark:text-slate-200"
+          >
+            12121
+          </p>
+          <p
+            class="font-source proportional-nums text-slate-900 text-lg dark:text-slate-200"
+          >
+            90909
+          </p>
+        </div>
+      </div>
+      <br />
+      <h2>tabular figures</h2>
+      <p>
+        use the tabular-nums utility to use numeric glyphs that have
+        uniform/tabular widths (rather than proportional). this corresponds to
+        the tnum opentype feature
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div class="max-w-sm text-right">
+          <p
+            class="font-source tabular-nums text-slate-900 text-lg dark:text-slate-200"
+          >
+            12121
+          </p>
+          <p
+            class="font-source tabular-nums text-slate-900 text-lg dark:text-slate-200"
+          >
+            90909
+          </p>
+        </div>
+      </div>
+      <br />
+      <h2>diagonal fractions</h2>
+      <p>
+        use the diagonal-fractions utility to replace numbers separated by a
+        slash with common diagonal fractions. this corresponds to the frac
+        opentype feature
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <p
+          class="font-source diagonal-fractions text-center text-slate-900 text-lg dark:text-slate-200"
+        >
+          1/2 3/4 5/6
+        </p>
+      </div>
+      <br />
+      <h2>stacked fractions</h2>
+      <p>
+        use the stacked-fractions utility to replace numbers separated by a
+        slash with common stacked fractions. this corresponds to the afrc
+        opentype feature. very few fonts seem to support this feature - we've
+        used ubuntu mono here
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <p
+          class="font-ubuntu-mono stacked-fractions text-center text-slate-900 text-lg dark:text-slate-200"
+        >
+          1/2 3/4 5/6
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

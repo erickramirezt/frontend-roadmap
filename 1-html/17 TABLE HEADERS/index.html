@@ -1,0 +1,88 @@
+<!-- HTML TABLE HEADERS -->
+<!-- HTML CAN HAVE HEADERS FOR EACH COLUMN OR ROW, OR MANY COLUMNS/ROWS -->
+
+<!-- HTML TABLE HEADERS -->
+<!-- TABLE HEADERS ARE DEFINED WITH TH ELEMENTS. EACH TH ELEMENTS REPRESENTS A TABLE CELL -->
+<!-- EXAMPLE -->
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+<!-- VERTICAL TABLE HEADERS -->
+<!-- TO USE THE FIRST COLUMN AS TABLE HEADERS, DEFINE THE FIRST CELL IN EACH ROW AS A <th> ELEMENT -->
+<!-- EXAMPLE -->
+<table>
+  <tr>
+    <th>Firstname</th>
+    <td>Jill</td>
+    <td>Eve</td>
+  </tr>
+  <tr>
+    <th>Lastname</th>
+    <td>Smith</td>
+    <td>Jackson</td>
+  </tr>
+  <tr>
+    <th>Age</th>
+    <td>94</td>
+    <td>50</td>
+  </tr>
+</table>
+
+<!-- HEADER FOR MULTIPLE COLUMNS -->
+<!-- YOU CAN HAVE A HEADER THAT SPANS OVER TWO OR MORE COLUMNS -->
+<!-- TO DO THIS, USE THE COLSPAN ATTRIBUTE ON THE <th> ELEMENT -->
+<table>
+  <tr>
+    <th colspan="2">Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+<!-- TABLE CAPTION -->
+<!-- YOU CAN ADD A CAPTION THAT SERVES AS A HEADING FOR THE ENTIRE TABLE -->
+<!-- TO ADD A CAPTION TO A TABLE, USE THE <caption> TAG -->
+<!-- EXAMPLE -->
+<table>
+  <caption>
+    Monthly savings
+  </caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
+<!-- NOTE: THE <caption> TAG SHOULD BE INSERTED IMMEDIATELY AFTER THE <table> TAG -->
+    

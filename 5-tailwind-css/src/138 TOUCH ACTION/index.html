@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="py-1 px-2">
+      <h1>touch action</h1>
+      <p>
+        utilities for controlling how an element can be scrolled and zoomed on
+        touchscreens
+      </p>
+      <br />
+      <h2>setting the touch action</h2>
+      <p>
+        use the touch-{action} utilities to control how an element can be
+        scrolled (panned) and zoomed (pinched) on touchscreens
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div class="grid sm:grid-cols-2 gap-x-6 gap-y-14 font-mono font-bold">
+          <div class="flex flex-col items-center">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400"
+            >
+              touch-auto
+            </p>
+            <div
+              class="grid w-full h-48 overflow-auto touch-auto rounded-lg shadow-lg"
+            >
+              <img
+                class="col-span-1 col-start-1 col-end-1 w-[150%] max-w-none"
+                src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=600&amp;h=400&amp;q=80"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col items-center">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400"
+            >
+              touch-none
+            </p>
+            <div
+              class="w-full h-48 overflow-auto touch-none rounded-lg shadow-lg"
+            >
+              <img
+                class="w-[150%] max-w-none"
+                src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=600&amp;h=400&amp;q=80"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col items-center">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400"
+            >
+              touch-pan-x
+            </p>
+            <div
+              class="w-full h-48 overflow-auto touch-pan-x rounded-lg shadow-lg"
+            >
+              <img
+                class="w-[150%] max-w-none"
+                src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=600&amp;h=400&amp;q=80"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col items-center">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400"
+            >
+              touch-pan-y
+            </p>
+            <div
+              class="w-full h-48 overflow-auto touch-pan-y rounded-lg shadow-lg"
+            >
+              <img
+                class="w-[150%] max-w-none"
+                src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=600&amp;h=400&amp;q=80"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

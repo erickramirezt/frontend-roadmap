@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>js where to</h1>
+    <h2>the script tag</h2>
+    <p>in html, js code is inserted between script tags</p>
+    <p>example</p>
+    <script>
+      document.getElementById("demo").innerHTML = "My First JavaScript";
+    </script>
+
+    <h2>js functions and events</h2>
+    <p>
+      a js function is a block of js code, that can be executed when called for
+    </p>
+    <p>
+      for example, a function can be called when an event occurs, like when the
+      user clicks a button
+    </p>
+
+    <h2>js in head or body</h2>
+    <p>you can place any number of scripts in an html document</p>
+    <p>
+      scripts can be placed in the body, or in the head section of an html page,
+      or in both
+    </p>
+
+    <h2>js in head</h2>
+    <p>
+      in this example, a js function is placed in the head section of an html
+      page
+    </p>
+    <p>the function is invoked (called) when a button is clicked</p>
+    <p>example</p>
+    <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "Paragraph changed.";
+      }
+    </script>
+    <h2>demo js in head</h2>
+    <p id="demo">a paragraph</p>
+    <button type="button" onclick="myFunction()">try it</button>
+
+    <h2>js in body</h2>
+    <p>
+      in this example, a js function is placed in the body section of an html
+      page
+    </p>
+    <p>the function is invoked (called) when a button is clicked</p>
+    <p>example</p>
+    <h2>demo js in body</h2>
+    <p id="demo2">a paragraph</p>
+    <button type="button" onclick="myFunction2()">try it</button>
+    <script>
+      function myFunction2() {
+        document.getElementById("demo2").innerHTML = "Paragraph changed.";
+      }
+    </script>
+
+    <p>
+      placing scripts at the bottom of the body element improves the display
+      speed, because script interpretation slows down the display
+    </p>
+
+    <h2>external js</h2>
+    <p>scripts can also be placed in external files</p>
+
+    <p>
+      external scripts are practical when the same code is used in many
+      different web pages
+    </p>
+    <p>js diles have the file extension .js</p>
+    <p>
+      to use an external script, put the name of the script file in the src
+      (source) attribute of a script tag
+    </p>
+    <p>example</p>
+    <script src="index.js"></script>
+    <p>
+      you can place an external script reference in head or body ad you like
+    </p>
+    <p>
+      the script will behave as it was located exactly where the script tag is
+      located|
+    </p>
+
+    <p>external scripts cannot contain script tags</p>
+
+    <h2>external js advantages</h2>
+    <p>placing scripts in external files has some advantages</p>
+    <p>it separated html and code</p>
+    <p>it makes html and js easier to read and maintain</p>
+    <p>cached js files can speed up page loads</p>
+    <p>example</p>
+    <script src="myScript1.js"></script>
+    <script src="myScript2.js"></script>
+
+    <h2>external references</h2>
+    <p>an external script can be referenced in 3 different ways</p>
+    <p>with a full url (a full web address)</p>
+    <p>with a file path (like /js/)</p>
+    <p>without any path</p>
+
+    <p>example</p>
+    <script src="https://www.w3schools.com/js/myScript.js"></script>
+
+    <p>this example uses a file path to link to myScript.js</p>
+
+    <p>example</p>
+    <script src="/js/myScript.js"></script>
+
+    <p>this example uses no path to link to myScript.js</p>
+
+    <p>example</p>
+    <script src="myScript.js"></script>
+  </body>
+</html>

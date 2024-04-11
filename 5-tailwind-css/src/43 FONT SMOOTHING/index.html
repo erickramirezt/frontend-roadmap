@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="py-1 px-2">
+      <h1>font smoothing</h1>
+      <p>utilities for controlling the font smoothing of an element</p>
+      <br />
+      <h2>applying font smoothing</h2>
+      <p>
+        use the subpixel-antialiased utility to render text using subpixel
+        antialiasing and the antialiased utility to render text using grayscale
+        antialiasing
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div class="flex flex-col gap-8">
+          <div>
+            <span
+              class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400"
+              >subpixel-antialiased</span
+            >
+            <p
+              class="subpixel-antialiased text-lg font-medium text-slate-900 dark:text-slate-200"
+            >
+              The quick brown fox jumps over the lazy dog.
+            </p>
+          </div>
+          <div>
+            <span
+              class="font-medium text-sm text-slate-500 font-mono mb-3 dark:text-slate-400"
+              >antialiased</span
+            >
+            <p
+              class="antialiased text-lg font-medium text-slate-900 dark:text-slate-200"
+            >
+              The quick brown fox jumps over the lazy dog.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

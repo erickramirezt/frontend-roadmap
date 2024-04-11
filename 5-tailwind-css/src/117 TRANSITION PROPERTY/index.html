@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="py-1 px-2">
+      <h1>transition property</h1>
+      <p>utilities for controlling which css properties transition</p>
+      <br />
+      <h2>controlling transitioned properties</h2>
+      <p>
+        use the transition-{properties} utilities to specify which properties
+        should transition when they change
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div class="flex justify-around text-white text-sm font-bold leading-6">
+          <button
+            class="px-4 py-2 font-semibold text-sm bg-blue-500 text-white rounded-md shadow-sm hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 ease-in-out delay-150 duration-300"
+          >
+            Save Changes
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

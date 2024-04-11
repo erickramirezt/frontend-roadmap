@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="py-1 px-2">
+      <h1>divide color</h1>
+      <p>utilities for controlling the border color between elements</p>
+      <br />
+      <h2>setting the divide color</h2>
+      <p>
+        control the border color between elements using the divide-{color}
+        utilities
+      </p>
+      <div class="relative rounded-xl overflow-auto">
+        <div
+          class="grid grid-cols-1 divide-y divide-blue-200 font-mono text-white text-sm text-center font-bold leading-6 shadow-lg overflow-hidden max-w-sm mx-auto"
+        >
+          <div class="p-4 text-blue-500 bg-white">01</div>
+          <div class="p-4 text-blue-500 bg-white">02</div>
+          <div class="p-4 text-blue-500 bg-white">03</div>
+        </div>
+      </div>
+      <br />
+      <h2>changing the opacity</h2>
+      <p>
+        control the opacity of the divide color using the color opacity modifier
+      </p>
+      <div class="relative rounded-xl overflow-auto">
+        <div
+          class="grid grid-cols-1 divide-y-4 divide-slate-400/25 font-mono text-white text-sm text-center font-bold leading-6 shadow-lg overflow-hidden max-w-sm mx-auto"
+        >
+          <div class="p-4 text-slate-400 bg-white">01</div>
+          <div class="p-4 text-slate-400 bg-white">02</div>
+          <div class="p-4 text-slate-400 bg-white">03</div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

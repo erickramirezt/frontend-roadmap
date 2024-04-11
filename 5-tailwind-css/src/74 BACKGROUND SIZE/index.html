@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="py-1 px-2">
+      <h1>background size</h1>
+      <p>
+        utilities for controlling the background size of an element's background
+        image
+      </p>
+      <br />
+      <h2>auto</h2>
+      <p>use bg-auto to display the background image at its default size</p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="relative flex items-center justify-center h-48 rounded-lg w-56 sm:w-96 mx-auto overflow-hidden"
+        >
+          <div class="absolute inset-0 opacity-50 bg-stripes-gray"></div>
+          <div
+            class="relative z-10 w-full h-full bg-auto bg-no-repeat bg-center bg-[url(https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=128&amp;h=160&amp;q=80)]"
+          ></div>
+        </div>
+      </div>
+      <br />
+      <h2>cover</h2>
+      <p>
+        use bg-cover to scale the background image until it fills the background
+        layer
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="relative flex items-center justify-center rounded-lg overflow-hidden w-56 sm:w-96 mx-auto"
+        >
+          <div class="absolute inset-0 opacity-50 bg-stripes-gray"></div>
+          <div
+            class="relative z-10 w-full h-48 bg-cover bg-no-repeat bg-center bg-[url(https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=512&amp;h=640&amp;q=80)]"
+          ></div>
+        </div>
+      </div>
+      <br />
+      <h2>contain</h2>
+      <p>
+        use bg-contain to scale the background image to the outer edges without
+        cropping or stretching
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="relative flex items-center justify-center rounded-lg overflow-hidden w-56 sm:w-96 mx-auto"
+        >
+          <div class="absolute inset-0 opacity-50 bg-stripes-gray"></div>
+          <div
+            class="relative z-10 w-full h-48 bg-contain bg-no-repeat bg-center sm:bg-top bg-[url(https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=512&amp;h=640&amp;q=80)]"
+          ></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

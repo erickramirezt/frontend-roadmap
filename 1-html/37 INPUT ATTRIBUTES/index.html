@@ -1,0 +1,211 @@
+<!-- HTML INPUT ATTRIBUTES -->
+
+<!-- THE VALUE ATTRIBUTE -->
+<!-- THE INPUT VALUE ATTRIBUTE SPECIFIES AN INITIAL FOR AN INPUT FIELD -->
+<!-- EXAMPLE -->
+<form>
+  <label for="fname">First name:</label><br />
+  <input type="text" id="fname" name="fname" value="John" /><br />
+  <label for="lname">Last name:</label><br />
+  <input type="text" id="lname" name="lname" value="Doe" />
+</form>
+
+<!-- THE READONLY ATTRIBUTE -->
+<!-- THE INPUT READONLY ATTRIBUTE SPECIFIES THAT AN INPUT FIELD IS READONLY -->
+<!-- A READONLY INPUT FIELD CANNOT BE MODIFIED (HOWEVER, A USER CAN TAB TO IT, HIGHLIGHT IT, AND COPY THE TEXT 
+    FROM IT) -->
+<!-- THE VALUE OFA READONLY INPUT FIELD WILL BE SENT WHEN SUBMITTING THE FORM -->
+<!-- EXAMPLE -->
+<form>
+  <label for="fname">First name:</label><br />
+  <input type="text" id="fname" name="fname" value="John" readonly /><br />
+  <label for="lname">Last name:</label><br />
+  <input type="text" id="lname" name="lname" value="Doe" />
+</form>
+
+<!-- THE DISABLED ATTRIBUTE -->
+<!-- THE INPUT DISABLED ATTRIBUTE SPECIFIES THAT AN INPUT FIELD SHOULD BE DISABLED -->
+<!-- A DISABLED INPUT FIELD IS UNUSABLE AND UN-CLICKABLE -->
+<!-- THE VALUE OF A DISABLED INPUT FIELD WILL NOT BE SENT WHEN SUBMITTING THE FORM -->
+<!-- EXAMPLE -->
+<form>
+  <label for="fname">First name:</label><br />
+  <input type="text" id="fname" name="fname" value="John" disabled /><br />
+  <label for="lname">Last name:</label><br />
+  <input type="text" id="lname" name="lname" value="Doe" />
+</form>
+
+<!-- THE SIZE ATTRIBUTE -->
+<!-- THE INPUT SIZE ATTRIBUTE SPECIFIES THE WIDTH, IN CHARACTERS, OF AN INPUT FIELD -->
+<!-- THE DEFAULT VALUE FOR SIZE IS 20 -->
+<!-- NOTE: THE SIZE ATTRIBUTE WORKS WITH THE FOLLOWING TYPES: TEXT, SEARCH, TEL, URL, EMAIL AND PASSWORD -->
+<!-- EXAMPLE -->
+<form>
+  <label for="fname">First name:</label><br />
+  <input type="text" id="fname" name="fname" size="50" /><br />
+  <label for="pin">PIN:</label><br />
+  <input type="text" id="pin" name="pin" size="4" />
+</form>
+
+<!-- THE MAXLENGTH ATTRIBUTE -->
+<!-- THE INPUT MAXLENGTH ATTRIBUTE SPECIFIES THE MAXIMUM NUMBER OF CHARACTERS ALLOWED IN THE INPUT FIELD -->
+<!-- NOTE: WHEN A MAXLENGTH IS SET, THE INPUT FIELD WILL NOT ACCEPT MORE THAN THE SPECIFIED NUMBER OF CHARACTERS
+HOWEVER, THIS ATTRIBUTE DOES NOT PROVIDE ANY FEEDBACKS. SO IF YOU WANT ALERT THE USER, YOU MUST WRITE JAVASCRIPT
+CODE -->
+<!-- EXAMPLE -->
+<form>
+  <label for="fname">First name:</label><br />
+  <input type="text" id="fname" name="fname" size="50" /><br />
+  <label for="pin">PIN:</label><br />
+  <input type="text" id="pin" name="pin" maxlength="4" size="4" />
+</form>
+
+<!-- THE MIN AND MAX ATTRIBUTES -->
+<!-- THE INPUT MIN AND MAX ATTRIBUTES SPECIFY THE MINIMUM AND MAXIMUM VALUES FOR AN INPUT FIELD -->
+<!-- THE MIN AND MAX ATTRIBUTES WORK WITH THE FOLLOWING INPUT TYPES: NUMBER, RANGE, DATE, DATETIME-LOCAL, MONTH, TIME 
+    AND WEEK -->
+<!-- TIP: USE THE MAX AND MIN ATTRIBUTES TOGETHER TO CREATE A RANGE OF LEGAL VALUES -->
+<!-- EXAMPLE -->
+<form>
+  <label for="datemax">Enter a date before 1980-01-01:</label>
+  <input type="date" id="datemax" name="datemax" max="1979-12-31" /><br /><br />
+
+  <label for="datemin">Enter a date after 2000-01-01:</label>
+  <input type="date" id="datemin" name="datemin" min="2000-01-02" /><br /><br />
+
+  <label for="quantity">Quantity (between 1 and 5):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="5" />
+</form>
+
+<!-- THE MULTIPLE ATTRIBUTE -->
+<!-- THE INPUT MULTIPLE ATTRIBUTE SPECIFIES THAT THE USER IS ALLOWED TO ENTER MORE THAN ONE VALUE IN THE INPUT 
+    ELEMENT -->
+<!-- THE MULTIPLE ATTRIBUTE WORKS WITH THE FOLLOWING INPUT TYPES: EMAIL AND FILE -->
+<!-- EXAMPLE -->
+<form>
+  <label for="files">Select files:</label>
+  <input type="file" id="files" name="files" multiple />
+</form>
+
+<!-- THE PATTERN ATTRIBUTE -->
+<!-- THE INPUT PATTERN ATTRIBUTE SPECIFIES A REGULAR EXPRESSION THAT THE INPUT ELEMENT'S VALUE IS CHECKED AGAINST 
+    ON FORM SUBMISSION -->
+<!-- THE PATTERN ATTRIBUTE WORKS WITH THE FOLLOWING INPUT TYPES: TEXT, SEARCH, TEL, URL, EMAIL, AND PASSWORD -->
+<!-- TIP: USE THE GLOBAL TITLE ATTRIBUTE TO DESCRIBE THE PATTERN TO HELP THE USER -->
+<!-- EXAMPLE -->
+<form>
+  <label for="country_code">Country code:</label>
+  <input
+    type="text"
+    id="country_code"
+    name="country_code"
+    pattern="[A-Za-z]{3}"
+    title="Three letter country code"
+  />
+</form>
+
+<!-- THE PLACEHOLDER ATTRIBUTE -->
+<!-- THE INPUT PLACEHOLDER ATTRIBUTE SPECIFIES A SHORT HINT THAT DESCRIBES THE EXPECTED VALUE OF AN INPUT FIELD -->
+<!-- THE SHORT HINT IS DISPLAYED IN THE INPUT FIELD BEFORE THE USER ENTERS A VALUE -->
+<!-- THA PLACEHOLDER ATTRIBUTE WORKS WITH THE FOLLOWING INPUT TYPES: TEXT, SEARCHURL, TEL, EMAIL AND PASSWORD -->
+<!-- EXAMPLE -->
+<form>
+  <label for="phone">Enter a phone number:</label>
+  <input
+    type="tel"
+    id="phone"
+    name="phone"
+    placeholder="123-45-678"
+    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+  />
+</form>
+
+<!-- THE REQUIRED ATTRIBUTE -->
+<!-- THE INPUT REQUIRED ATTRIBUTE SPECIFIES THAT AN INPUT FIELD MUST BE FILLED OUT BEFORE SUBMITTING THE FORM -->
+<!-- THE REQUIRED ATTRIUTE WORKS WITH THE FOLLOWING INPUT TYPES: TEXT, SEARCH, URL, TEL, EMAIL, PASSWORD, DATE 
+    PICKERS, NUMBER, CHECKBOX, RADIO AND FILE -->
+<!-- EXAMPLE -->
+<form>
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required />
+</form>
+
+<!-- THE STEP ATTRIBUTE -->
+<!-- THE INPUT STEP ATTRIBUTE SPECIFIES THE LEGAL NUMBER INTERVALS FOR AN INPUT FIELD -->
+<!-- TIP: THIS ATTRIBUTE CAN BE USED TOGETHER WITH THE MAX AND MIN ATTRIBUTES TO CREATE A RANGE OF LEGAL VALUES -->
+<!-- THE STEP ATTRIBUTE WORKS WITH THE FOLLOWING INPUT TYPES: NUMBER, RANGE, DATE, DATETIME-LOCAL, MONTH, TIME 
+    AND WEEK -->
+<!-- EXAMPLE -->
+<form>
+  <label for="points">Points:</label>
+  <input type="number" id="points" name="points" step="3" />
+</form>
+<!-- NOTE: INPUT RESTRICTIONS ARE NOT FOOLPROOF, AND JAVASCRIPT PROVIDES MANY WAYS TO ADD ILLEGAL INPUT. TO SAFELY
+RESTRICT INPUT, IT MUST ALSO BE CHECKED BY THE RECEIVER (THE SERVER) -->
+
+<!-- THE AUTOFOCUS ATTRIBUTE -->
+<!-- THE INPUT AUTOFOCUS ATTRIBUTE SPECIFIES THAT THE INPUT FIELD SHOULD AUTOMATICALLY GET FOCUS WHEN THE PAGE 
+    LOADS -->
+<!-- EXAMPLE -->
+<form>
+  <label for="fname">First name:</label><br />
+  <input type="text" id="fname" name="fname" autofocus /><br />
+  <label for="lname">Last name:</label><br />
+  <input type="text" id="lname" name="lname" />
+</form>
+
+<!-- THE HEIGHT AND WIDTH ATTRIBUTES -->
+<!-- THE INPUT HEIGHT AND WIDTH ATTRIBUTES SPECIFY THE HEIGHT AND WIDTH OF THE <input type="image"> ELEMENT -->
+<!-- TIP: ALWAYS SPECIFY BOTH THE HEIGHT AND WIDTH ATTRIBUTES FOR IMAGES. IF HEIGHT AND WIDTH ARE SET, THE SPACE 
+REQUIRED FOR THE IMAGE IS RESERVED WHEN THE PAGE IS LAODED. WITHOUT THESE ATTRIBUTES, THE BROWSER DOES NOT KNOW
+THE SIZE OF THE IMAGE, AND CANNOT RESERVE THE APPROPIATE SPACE TO IT. THE EFFECT WILL BE THAT THE PAGE LAYOUT 
+WILL CHANGE DURING LOADING (WHILE THE IMAGES LOAD) -->
+<!-- EXAMPLE -->
+<form>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" /><br /><br />
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname" /><br /><br />
+  <input
+    type="image"
+    src="img_submit.gif"
+    alt="Submit"
+    width="48"
+    height="48"
+  />
+</form>
+
+<!-- THE LIST ATTRIBUTE -->
+<!-- THE INPUT LIST ATTRIBUTE REFERS TO A <datalist> ELEMENT THAT CONTAINS PREDEFINED OPTIONS FOR AN <input> 
+    ELEMENT -->
+<!-- EXAMPLE -->
+<form>
+  <input list="browsers" />
+  <datalist id="browsers">
+    <option value="Internet Explorer"></option>
+    <option value="Firefox"></option>
+    <option value="Chrome"></option>
+    <option value="Opera"></option>
+    <option value="Safari"></option>
+  </datalist>
+</form>
+
+<!-- THE AUTOCOMPLETE ATTRIBUTE -->
+<!-- THE INPUT AUTOCOMPLETE ATTRIBUTE SPECIFIES WHETHER OR NOT AN INPUT FIELD SHOULD HAVE AUTOCOMPLETE ENABLED -->
+<!-- AUTOCOMPLETE ENABLES THE BROWSER TO PREDICT THE VALUE. WHEN A USER STARTS TO TYPE IN A FIELD, THE BROWSER 
+    SHOULD DISPLAY OPTIONS TO FILL IN THE FIELD, BASED ON EARLIER VALUES, OR VALUES FROM OTHER FORMS ON THE SAME
+    WEBSITE -->
+<!-- THE AUTOCOMPLETE ATTRIBUTE WORK WITH <form> AND THE FOLLOWING <input> TYPES: TEXT, SEARCH, URL, TEL, EMAIL, 
+PASSWORD, DATEPICKERS, RANGE AND COLOR -->
+<!-- EXAMPLE -->
+<form action="/action_page.php" autocomplete="on">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" /><br /><br />
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname" /><br /><br />
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" autocomplete="off" /><br /><br />
+  <input type="submit" value="Submit" />
+</form>
+<!-- TIP: IN SOME BROWSERS YOU MAY NEED TO ACTIVATE AN AUTOCOMPLETE FUNCTION FOR THIS TO WORK (LOOK UNDER
+    PREFERENCES IN THE BROWSER MENU) -->

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="py-1 px-2">
+      <h1>transform origin</h1>
+      <p>
+        utilities for specifying the origin for an element's transformations
+      </p>
+      <br />
+      <h2>changing the transform origin</h2>
+      <p>
+        specify an element's transform origin using the origin-{keyword}
+        utilities
+      </p>
+      <div class="flex sm:block overflow-scroll sm:overflow-visible scroll-p-8">
+        <div
+          class="flex items-center justify-around gap-12 sm:gap-4 font-mono font-bold p-8 px-12 sm:px-8 pb-10 shrink-0"
+        >
+          <div class="flex flex-col items-center shrink-0">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400"
+            >
+              origin-center
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img
+                  class="w-24 h-24 object-cover rounded-lg opacity-25"
+                  src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"
+                />
+              </div>
+              <div class="relative z-10 origin-center rotate-45">
+                <img
+                  class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                  src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"
+                />
+                <div
+                  class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400"
+            >
+              origin-top-left
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img
+                  class="w-24 h-24 object-cover rounded-lg opacity-25"
+                  src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"
+                />
+              </div>
+              <div class="relative z-10 origin-top-left rotate-12">
+                <img
+                  class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                  src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"
+                />
+                <div
+                  class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-9 dark:text-slate-400"
+            >
+              origin-bottom
+            </p>
+            <div class="relative">
+              <div class="absolute inset-0">
+                <img
+                  class="w-24 h-24 object-cover rounded-lg opacity-25"
+                  src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"
+                />
+              </div>
+              <div class="relative z-10 origin-bottom -rotate-12">
+                <img
+                  class="w-24 h-24 object-cover rounded-lg shadow-xl"
+                  src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=320&amp;h=320&amp;q=80"
+                />
+                <div
+                  class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-lg"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>using innerhtml</h2>
+    <p>
+      to access an html element, js can use the document.getElementById(id)
+      method
+    </p>
+    <p>
+      the id attribute defines the html element. the innerhtml property defines
+      the html content
+    </p>
+
+    <p>example</p>
+    <p id="demo"></p>
+    <script>
+      document.getElementById("demo").innerHTML = 5 + 6;
+    </script>
+
+    <p>
+      changing the innerhtml property of an html element is a common way to
+      display data in html
+    </p>
+
+    <h2>using document.write()</h2>
+    <p>for testing purposes, it is convenient to use document.write()</p>
+
+    <p>example</p>
+    <script>
+      document.write(5 + 6);
+    </script>
+
+    <p>
+      note: when you use document.write() after an html document is loaded, it
+      will delete all existing html
+    </p>
+
+    <p>example</p>
+    <button type="button" onclick="document.write(5 + 6)">try it</button>
+
+    <p>the document.write() method should only be used for testing</p>
+
+    <h2>using window.alert()</h2>
+    <p>you can use an alert box to display data</p>
+
+    <p>example</p>
+    <script>
+      window.alert(5 + 6);
+    </script>
+
+    <p>you can skip the window keyword</p>
+    <p>
+      in js, the window object is the global scope object. this means that
+      variables, properties, and methods by default belong to the window object.
+      this also means that specifying the window keyword is optional
+    </p>
+
+    <p>example</p>
+    <script>
+      alert(5 + 6);
+    </script>
+
+    <h2>using console.log()</h2>
+    <p>
+      for debugging purposes, you can call the console.log() method in the
+      browser to display data
+    </p>
+
+    <p>example</p>
+    <script>
+      console.log(5 + 6);
+    </script>
+
+    <h2>js print</h2>
+    <p>js does not have any print object or print methods</p>
+    <p>you cannot access output devices from js</p>
+    <p>
+      the only exception is that you can call the window.print() method in the
+      browser to print the content of the current window
+    </p>
+
+    <p>example</p>
+    <button type="button" onclick="window.print()">print this page</button>
+  </body>
+</html>

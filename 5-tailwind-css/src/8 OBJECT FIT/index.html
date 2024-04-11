@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="py-1 px-2">
+      <h1>object fit</h1>
+      <p>
+        utilities for controlling how a replaced element's content should be
+        resized
+      </p>
+      <br />
+      <h2>resizing to cover a container</h2>
+      <p>
+        resizes an element's content to cover its container using object-cover
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="text-center rounded-lg overflow-hidden w-56 sm:w-96 mx-auto"
+        >
+          <img
+            class="object-cover h-48 w-full"
+            src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1024&amp;h=1280&amp;q=80"
+          />
+        </div>
+      </div>
+      <br />
+      <h2>containing an element</h2>
+      <p>
+        resize an element's content to stay contained within its container using
+        object-contain
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="relative rounded-lg text-center overflow-hidden w-56 sm:w-96 mx-auto"
+        >
+          <div class="absolute inset-0 opacity-50 bg-stripes-gray"></div>
+          <img
+            class="relative z-10 object-contain h-48 w-full"
+            src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1024&amp;h=1280&amp;q=80"
+          />
+        </div>
+      </div>
+      <br />
+      <h2>stretching to fit a container</h2>
+      <p>stretch an element's content to fit its container using object-fill</p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="bg-stripes-sky-blue rounded-lg text-center overflow-hidden w-56 sm:w-96 mx-auto"
+        >
+          <img
+            class="object-fill h-48 w-full"
+            src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1024&amp;h=1280&amp;q=80"
+          />
+        </div>
+      </div>
+      <br />
+      <h2>scaling down if two large</h2>
+      <p>
+        display an element's content at its original size but scale it down to
+        fit its container if necessary using object-scale-down
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="relative rounded-lg text-center overflow-hidden w-56 sm:w-96 mx-auto"
+        >
+          <div class="absolute inset-0 opacity-50 bg-stripes-gray"></div>
+          <img
+            class="relative z-10 object-scale-down h-48 w-full"
+            src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=128&amp;h=160&amp;q=80"
+          />
+        </div>
+      </div>
+      <br />
+      <h2>using an element's original size</h2>
+      <p>
+        display an element's content at its original size ignoring the container
+        size using object-none
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="relative rounded-lg text-center overflow-hidden w-56 sm:w-96 mx-auto"
+        >
+          <div class="absolute inset-0 opacity-50 bg-stripes-gray"></div>
+          <img
+            class="relative z-10 object-none h-48 w-full"
+            src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1024&amp;h=1280&amp;q=80"
+          />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

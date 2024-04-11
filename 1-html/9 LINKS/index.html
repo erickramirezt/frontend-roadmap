@@ -1,0 +1,87 @@
+<!-- HTML LINKS - HYPERLINKS -->
+<!-- HTML LINKS ARE HYPERLINKS -->
+<!-- YOU CAN CLICK ON A LINK AND JUMP TO ANOTHER DOCUMENT -->
+<!-- WHEN YOU MOVE THE MOUSE OVER A LINK, THE MOUSE ARROW WILL TURN INTO A LITTLE HAND -->
+<!-- NOTE: A LINK DOES NOT HAVE TO BE TEXT -->
+<!-- A LINK CAN BE AN IMAGE OR ANY OTHER HTML ELEMENT -->
+
+<!-- HTML LINKS - SYNTAX -->
+<!-- HTML LINKS ARE DEFINED WITH THE <a> TAG: -->
+<a href="url">link text</a>
+<!-- THE MOST IMPORTANT ATTRIBUTE OF THE <a> ELEMENT IS THE HREF ATTRIBUTE, WHICH INDICATES THE
+    LINK'S DESTINATION -->
+<!-- THE LINK TEXT IS THE VISIBLE PART -->
+<!-- CLICKING ON THE LINK TEXT, WILL SEND YOU TO THE SPECIFIED ADDRESS -->
+<!-- EXAMPLE: -->
+<a href="https://www.w3schools.com">VISIT W3SCHOOLS.COM!</a>
+<!-- BY DEFAULT, LINKS WILL APPEAR AS FOLLOWS IN ALL BROWSERS: -->
+<!-- AN UNVISITED LINK IS UNDERLINED AND BLUE -->
+<!-- A VISITED LINK IS UNDERLINED AND PURPLE -->
+<!-- AN ACTIVE LINK IS UNDERLINED AND RED -->
+<!-- NOTE: THE LINK'S COLORS CAN BE CHANGED WITH CSS -->
+
+<!-- HTML LINKS - TARGET ATTRIBUTE -->
+<!-- BY DEFAULT, THE LINKED PAGE WILL BE DISPLAYED IN THE CURRENT BROWSER WINDOW. TO CHANGE THIS,
+YOU MUST SPECIFY TARGET FOR THE LINK -->
+<!-- THE TARGET ATTRIBUTE CAN HAVE ONE OF THE FOLLOWING VALUES: -->
+<!-- _blank - opens the linked document in a new window or tab -->
+<!-- _self - opens the linked document in the same window/tab as it was clicked (this is default) -->
+<!-- _parent - opens the linked document in the parent frame -->
+<!-- _top - opens the linked document in the full body of the window -->
+<!-- EXAMPLE: -->
+<!-- OPEN LINK IN A NEW WINDOW OR TAB -->
+<a href="https://www.w3schools.com" target="_blank">VISIT W3SCHOOLS.COM!</a>
+
+<!-- ABSOLUTE URLS VS RELATIVE URLS -->
+<!-- BOTH EXAMPLES ABOVE ARE USING AN ABSOLUTE URL (A FULL WEB ADDRESS) IN THE HREF 
+    ATTRIBUTE -->
+<!-- A LOCAL LINK (A LINK TO A PAGE WITHIN THE SAME WEBSITE) IS SPECIFIED WITH A RELATIVE URL 
+    (WITHOUT THE "https://www." PART) -->
+<!-- EXAMPLE: -->
+<h2>ABSOLUTE URLS</h2>
+<p>
+  <a href="https://www.w3.org/">W3C</a>
+</p>
+<p>
+  <a href="https://www.google.com/">Google</a>
+</p>
+
+<h2>RELATIVE URLS</h2>
+<p>
+  <a href="/html/">HTML Tutorial</a>
+</p>
+<p>
+  <a href="/css/">CSS Tutorial</a>
+</p>
+
+<!-- HTML LINKS - USE AN IMAGE AS A LINK -->
+<!-- TO USE AN IMAGE AS A LINK, JUST PUT THE <img> TAG INSIDE THE <a> TAG -->
+<!-- EXAMPLE: -->
+<a href="default.asp">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+
+<!-- LINK TO AN EMAIL ADDRESS -->
+<!-- USE MAILTO: INSIDE THE HREF ATTRIBUTE TO CREATE A LINK THAT OPENS THE USER'S EMAIL PROGRAM -->
+<!-- EXAMPLE: -->
+<a href="mailto:someone@example.com">SEND EMAIL</a>
+
+<!-- BUTTON AS A LINK -->
+<!-- TO USE AN HTML BUTTON AS A LINK, YOU HAVE TO ADD SOME JAVASCRIPT CODE -->
+<!-- EXAMPLE: -->
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+<!-- LINK TITLES -->
+<!-- THE TITLE ATTRIBUTE SPECIFIES EXTRA INFORMATION ABOUT AN ELEMENT. THE INFORMATION IS MOST
+OFTEN SHOWN AS A TOOLIP TEXT WHEN THE MOUSE MOVES OVER THE ELEMENT -->
+<!-- EXAMPLE: -->
+<a href="https://www.w3schools.com" title="Go to W3Schools HTML section">VISIT W3SCHOOLS.COM!</a>
+
+<!-- MORO ON ABSOLUTE URLS AND RELATIVE URLS -->
+<!-- EXAMPLE: -->
+<!-- USE A FULL URL TO LINK TO A WEB PAGE: -->
+<a href="https://www.w3schools.com">W3Schools</a>
+<!-- LINK TO A PAGE LOCATED IN THE HTML FOLDER ON THE CURRENT WEBSITE -->
+<a href="/html/default.asp">HTML Tutorial</a>
+<!-- LINK TO A PAGE LOCATED IN THE SAME FOLDER ON THE CURRENT PAGE -->
+<a href="default.asp">HTML Tutorial</a>

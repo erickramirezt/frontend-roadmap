@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="py-1 px-2">
+      <h1>box shadow</h1>
+      <p>utilities for controlling the box shadow of an element</p>
+      <br />
+      <h2>adding an outer shadow</h2>
+      <p>
+        use the shadow-sm, shadow, shadow-md, shadow-lg, shadow-xl, or
+        shadow-2xl utilities to apply different sized outer box shadows to an
+        element
+      </p>
+      <div class="flex sm:block overflow-scroll sm:overflow-visible scroll-p-8">
+        <div
+          class="flex items-center justify-around gap-12 font-mono font-bold shrink-0 p-8"
+        >
+          <div class="flex flex-col items-center shrink-0">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-3"
+            >
+              shadow-md
+            </p>
+            <div class="w-24 h-24 rounded-lg bg-white shadow-md"></div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-3"
+            >
+              shadow-lg
+            </p>
+            <div class="w-24 h-24 rounded-lg bg-white shadow-lg"></div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-3"
+            >
+              shadow-xl
+            </p>
+            <div class="w-24 h-24 rounded-lg bg-white shadow-xl"></div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-3"
+            >
+              shadow-2xl
+            </p>
+            <div class="w-24 h-24 rounded-lg bg-white shadow-2xl"></div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>adding an inner shadow</h2>
+      <p>
+        use the shadow-inner utility to apply a subtle inset box shadow to an
+        element. this can be useful for things like form control or wells
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div class="flex items-center justify-around gap-4 font-mono font-bold">
+          <div class="flex flex-col items-center">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-3"
+            >
+              shadow-inner
+            </p>
+            <div
+              class="w-24 h-24 rounded-lg bg-white shadow-inner ring-1 ring-black/5"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>removing the shadow</h2>
+      <p>
+        use shadow-none to remove an existing box shadow from an element. this
+        is most commonly used to remove a shadow that was applied at a smaller
+        breakpoint
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div class="flex items-center justify-around gap-4 font-mono font-bold">
+          <div class="flex flex-col items-center">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-3"
+            >
+              shadow-none
+            </p>
+            <div class="w-24 h-24 rounded-lg bg-white shadow-none"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

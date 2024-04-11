@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="py-1 px-2">
+      <h1>order</h1>
+      <p>utilities for controlling the order of flex and grid items</p>
+      <br />
+      <h2>ordering flex and grid items</h2>
+      <p>
+        use order-{order} to render flex and grid items in a different order
+        than they appear in the dom
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="flex justify-between font-mono text-white text-sm font-bold leading-6"
+        >
+          <div
+            class="w-14 h-14 rounded-lg flex items-center justify-center bg-sky-500 shadow-lg order-last"
+          >
+            01
+          </div>
+          <div
+            class="w-14 h-14 rounded-lg flex items-center justify-center bg-sky-500 shadow-lg"
+          >
+            02
+          </div>
+          <div
+            class="w-14 h-14 rounded-lg flex items-center justify-center bg-sky-500 shadow-lg"
+          >
+            03
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="py-1 px-2">
+      <h1>user select</h1>
+      <p>
+        utilities for controlling whether the user can select text in a element
+      </p>
+      <br />
+      <h2>disabling text selection</h2>
+      <p>
+        use select-none to prevent selecting text in an element and its children
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div class="flex justify-center">
+          <div
+            class="select-none inline-flex text-center bg-white text-slate-900 font-semibold font-sans text-sm shadow-lg rounded-lg ring-1 ring-slate-900/5 px-4 py-3 dark:bg-slate-800 dark:ring-0 dark:highlight-white/5 dark:text-slate-200"
+          >
+            The quick brown fox jumps over the lazy dog.
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>allowing text selection</h2>
+      <p>
+        use select-text to allow selecting text in an element and its children
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div class="flex justify-center">
+          <div
+            class="select-text inline-flex text-center bg-white text-slate-900 font-semibold font-sans text-sm shadow-lg rounded-lg ring-1 ring-slate-900/5 px-4 py-3 dark:bg-slate-800 dark:ring-0 dark:highlight-white/5 dark:text-slate-200"
+          >
+            The quick brown fox jumps over the lazy dog.
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>selecting all text in one click</h2>
+      <p>
+        use select-all to automically select all the text in an element when a
+        user clicks
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div class="flex justify-center">
+          <div
+            class="select-all inline-flex text-center bg-white text-slate-900 font-semibold font-sans text-sm shadow-lg rounded-lg ring-1 ring-slate-900/5 px-4 py-3 dark:bg-slate-800 dark:ring-0 dark:highlight-white/5 dark:text-slate-200"
+          >
+            The quick brown fox jumps over the lazy dog.
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>using auto select behaviour</h2>
+      puse select-auto to use the default browser behaviour for selecting text.
+      useful for undoing other classes like select-none at different breakpoints
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div class="flex justify-center">
+          <div
+            class="select-auto inline-flex text-center bg-white text-slate-900 font-semibold font-sans text-sm shadow-lg rounded-lg ring-1 ring-slate-900/5 px-4 py-3 dark:bg-slate-800 dark:ring-0 dark:highlight-white/5 dark:text-slate-200"
+          >
+            The quick brown fox jumps over the lazy dog.
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="py-1 px-2">
+      <h1>flex grow</h1>
+      <p>utilities for controlling how flex items grow</p>
+      <br />
+      <h2>grow</h2>
+      <p>use grow to allow a flex item to grow to fill any available space</p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="flex gap-4 text-white text-sm font-bold font-mono leading-6 bg-stripes-indigo rounded-lg"
+        >
+          <div
+            class="w-14 h-14 flex-none rounded-lg flex items-center justify-center bg-indigo-300 dark:bg-indigo-800 dark:text-indigo-400"
+          >
+            01
+          </div>
+          <div
+            class="p-4 grow rounded-lg flex items-center justify-center bg-indigo-500 shadow-lg"
+          >
+            02
+          </div>
+          <div
+            class="p-4 w-14 h-14 flex-none rounded-lg flex items-center justify-center bg-indigo-300 dark:bg-indigo-800 dark:text-indigo-400"
+          >
+            03
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>don't grow</h2>
+      <p>use grow-0 to prevent a flex item from growing</p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="flex gap-4 text-white text-sm font-bold font-mono leading-6 bg-stripes-pink rounded-lg"
+        >
+          <div
+            class="p-4 grow rounded-lg flex items-center justify-center bg-pink-300 dark:bg-pink-800 dark:text-pink-400"
+          >
+            01
+          </div>
+          <div
+            class="shrink-0 w-14 h-14 grow-0 rounded-lg flex items-center justify-center bg-pink-500 shadow-lg"
+          >
+            02
+          </div>
+          <div
+            class="p-4 grow rounded-lg hidden md:flex items-center justify-center bg-pink-300 dark:bg-pink-800 dark:text-pink-400"
+          >
+            03
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

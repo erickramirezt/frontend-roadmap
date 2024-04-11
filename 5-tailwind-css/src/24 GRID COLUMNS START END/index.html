@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="py-1 px-2">
+      <h1>grid columns start / end</h1>
+      <p>
+        utilities for controlling how elements are sized and placed across grid
+        columns
+      </p>
+      <br />
+      <h2>spanning columns</h2>
+      <p>use the col-span-{n} utilities to make an element span n columns</p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="grid grid-cols-3 gap-4 font-mono text-white text-sm text-center font-bold leading-6"
+        >
+          <div
+            class="p-4 rounded-lg bg-indigo-300 dark:bg-indigo-800 dark:text-indigo-400"
+          >
+            01
+          </div>
+          <div
+            class="p-4 rounded-lg bg-indigo-300 dark:bg-indigo-800 dark:text-indigo-400"
+          >
+            02
+          </div>
+          <div
+            class="p-4 rounded-lg bg-indigo-300 dark:bg-indigo-800 dark:text-indigo-400"
+          >
+            03
+          </div>
+          <div class="p-4 rounded-lg shadow-lg bg-indigo-500 col-span-2">
+            04
+          </div>
+          <div
+            class="p-4 rounded-lg bg-indigo-300 dark:bg-indigo-800 dark:text-indigo-400"
+          >
+            05
+          </div>
+          <div
+            class="p-4 rounded-lg bg-indigo-300 dark:bg-indigo-800 dark:text-indigo-400"
+          >
+            06
+          </div>
+          <div class="p-4 rounded-lg shadow-lg bg-indigo-500 col-span-2">
+            07
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>starting and ending lines</h2>
+      <p>
+        use the col-start-{n} and col-end-{n} utilities to make an element start
+        or end at the nth grid line. these can also be combined with the
+        col-span-{n} utilities to span a specific number of columns note that
+        css grid lines start at 1, not 0, so a full-width element in a 6-column
+        grid would start at line 1 and end at line 7
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="grid grid-cols-6 gap-4 font-mono text-white text-sm text-center font-bold leading-6"
+        >
+          <div class="p-4 rounded-lg bg-stripes-sky"></div>
+          <div
+            class="p-4 rounded-lg shadow-lg bg-sky-500 col-start-2 col-span-4"
+          >
+            01
+          </div>
+          <div class="p-4 rounded-lg bg-stripes-sky"></div>
+          <div
+            class="p-4 rounded-lg shadow-lg bg-sky-500 col-start-1 col-end-3"
+          >
+            02
+          </div>
+          <div class="p-4 rounded-lg bg-stripes-sky"></div>
+          <div class="p-4 rounded-lg bg-stripes-sky"></div>
+          <div class="p-4 rounded-lg shadow-lg bg-sky-500 col-end-7 col-span-2">
+            03
+          </div>
+          <div
+            class="p-4 rounded-lg shadow-lg bg-sky-500 col-start-1 col-end-7"
+          >
+            04
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

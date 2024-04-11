@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="py-1 px-2">
+      <h1>hyphens</h1>
+      <p>utilities for controlling how words should be hyphenated</p>
+      <br />
+      <h2>none</h2>
+      <p>
+        use hyphens-none to prevent words from being hyphenated even if the line
+        break suggestion &shy; is used
+      </p>
+      <div class="overflow-x-scroll sm:overflow-x-visible px-4">
+        <div
+          class="mx-auto max-w-xs bg-white shadow-xl p-12 text-slate-500 dark:bg-slate-800 dark:text-slate-400"
+        >
+          <p class="hyphens-none">
+            Officially recognized by the Duden dictionary as the longest word in
+            German,
+            <span
+              class="text-slate-900 font-medium dark:text-slate-200"
+              lang="de"
+            >
+              Kraftfahrzeug­haftpflichtversicherung</span
+            >
+            is a 36 letter word for motor vehicle liability insurance.
+          </p>
+        </div>
+      </div>
+      <br />
+      <h2>manual</h2>
+      <p>
+        use hyphens-manual to only set hyphenation points where the line break
+        suggestion &shy; is used
+      </p>
+      <div class="overflow-x-scroll sm:overflow-x-visible px-4">
+        <div
+          class="mx-auto max-w-xs bg-white shadow-xl p-12 text-slate-500 dark:bg-slate-800 dark:text-slate-400"
+        >
+          <p class="hyphens-manual">
+            Officially recognized by the Duden dictionary as the longest word in
+            German,
+            <span
+              class="text-slate-900 font-medium dark:text-slate-200"
+              lang="de"
+            >
+              Kraftfahrzeug­haftpflichtversicherung</span
+            >
+            is a 36 letter word for motor vehicle liability insurance.
+          </p>
+        </div>
+      </div>
+      <br />
+      <h2>auto</h2>
+      <p>
+        use hyphens-auto to allow the browser to automically choose hyphenation
+        points based on the language. the line break suggestion &shy; will be
+        preferred over automatic hyphenation points
+      </p>
+      <div class="overflow-x-scroll sm:overflow-x-visible px-4">
+        <div
+          class="mx-auto max-w-xs bg-white shadow-xl p-12 text-slate-500 dark:bg-slate-800 dark:text-slate-400"
+        >
+          <p class="hyphens-auto">
+            Officially recognized by the Duden dictionary as the longest word in
+            German,
+            <span
+              class="text-slate-900 font-medium dark:text-slate-200"
+              lang="de"
+            >
+              Kraftfahrzeughaftpflichtversicherung</span
+            >
+            is a 36 letter word for motor vehicle liability insurance.
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

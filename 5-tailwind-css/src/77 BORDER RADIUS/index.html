@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="py-1 px-2">
+      <h1>border radius</h1>
+      <p>utilities for controlling the border of an element</p>
+      <br />
+      <h2>rounded corners</h2>
+      <p>
+        use utilities like rounded-sm, rounded, or rounded-lg to apply different
+        border radius sizes to an element
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="flex flex-col sm:flex-row items-center justify-around gap-4 text-white text-sm text-center font-bold leading-6"
+        >
+          <div class="flex flex-col items-center shrink-0">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400"
+            >
+              rounded
+            </p>
+            <div class="p-4 shadow-sm bg-purple-500 w-16 h-16 rounded"></div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400"
+            >
+              rounded-md
+            </p>
+            <div class="p-4 shadow-sm bg-purple-500 w-16 h-16 rounded-md"></div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400"
+            >
+              rounded-lg
+            </p>
+            <div class="p-4 shadow-sm bg-purple-500 w-16 h-16 rounded-lg"></div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400"
+            >
+              rounded-full
+            </p>
+            <div
+              class="p-4 shadow-sm bg-purple-500 w-16 h-16 rounded-full"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>pill buttons</h2>
+      <p>use the rounded-full utility to create pill buttons</p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="flex justify-center gap-4 text-white text-sm text-center font-bold leading-6"
+        >
+          <div class="flex flex-col items-center shrink-0">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400"
+            >
+              rounded-full
+            </p>
+            <button
+              class="px-4 py-2 font-semibold text-sm bg-cyan-500 text-white rounded-full shadow-sm"
+            >
+              Save Changes
+            </button>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>no rounding</h2>
+      <p>
+        use rounded-none to remove an existing border radius from an element
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="flex justify-center gap-4 text-white text-sm text-center font-bold leading-6"
+        >
+          <div class="flex flex-col items-center shrink-0">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400"
+            >
+              rounded-none
+            </p>
+            <button
+              class="px-4 py-2 font-semibold text-sm bg-sky-500 text-white rounded-none shadow-sm"
+            >
+              Save Changes
+            </button>
+          </div>
+        </div>
+      </div>
+      <br />
+      <p>
+        this is most commonly used to remove a border radius that was applied at
+        a smaller breakpoint
+      </p>
+      <h2>rounding side separately</h2>
+      <p>use rounded-{t|r|b|l}-{size?} to only round one side of an element</p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="flex flex-col sm:flex-row items-center justify-around gap-4 text-white text-sm text-center font-bold leading-6"
+        >
+          <div class="flex flex-col items-center shrink-0">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400"
+            >
+              rounded-t-lg
+            </p>
+            <div class="p-4 shadow-sm bg-blue-500 w-16 h-16 rounded-t-lg"></div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400"
+            >
+              rounded-r-lg
+            </p>
+            <div class="p-4 shadow-sm bg-blue-500 w-16 h-16 rounded-r-lg"></div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400"
+            >
+              rounded-b-lg
+            </p>
+            <div class="p-4 shadow-sm bg-blue-500 w-16 h-16 rounded-b-lg"></div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400"
+            >
+              rounded-l-lg
+            </p>
+            <div class="p-4 shadow-sm bg-blue-500 w-16 h-16 rounded-l-lg"></div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>rounding corners separately</h2>
+      <p>
+        use rounded-{tl|tr|br|bl}-{size?} to only round one corner an element
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="flex flex-col sm:flex-row items-center justify-around gap-4 text-white text-sm text-center font-bold leading-6"
+        >
+          <div class="flex flex-col items-center shrink-0">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400"
+            >
+              rounded-tl-lg
+            </p>
+            <div
+              class="p-4 shadow-sm bg-pink-500 w-16 h-16 rounded-tl-lg"
+            ></div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400"
+            >
+              rounded-tr-lg
+            </p>
+            <div
+              class="p-4 shadow-sm bg-pink-500 w-16 h-16 rounded-tr-lg"
+            ></div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400"
+            >
+              rounded-br-lg
+            </p>
+            <div
+              class="p-4 shadow-sm bg-pink-500 w-16 h-16 rounded-br-lg"
+            ></div>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400"
+            >
+              rounded-bl-lg
+            </p>
+            <div
+              class="p-4 shadow-sm bg-pink-500 w-16 h-16 rounded-bl-lg"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>using logical properties</h2>
+      <p>
+        use the rounded-{s|e|ss|se|es|ee}-{size?} utilities to set the border
+        radius using logical properties, which map to appropiate corners based
+        on the text direction
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div class="grid grid-cols-2 gap-x-4 place-items-center">
+          <div class="flex flex-col items-start gap-y-4" dir="ltr">
+            <p class="text-sm font-medium">Left-to-right</p>
+            <div class="p-4 shadow-sm bg-blue-500 w-16 h-16 rounded-s-lg"></div>
+          </div>
+          <div class="flex flex-col items-start gap-y-4" dir="rtl">
+            <p class="text-sm font-medium">Right-to-left</p>
+            <div class="p-4 shadow-sm bg-blue-500 w-16 h-16 rounded-s-lg"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

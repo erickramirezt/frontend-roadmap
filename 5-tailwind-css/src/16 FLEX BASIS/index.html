@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="py-1 px-2">
+      <h1>flex basis</h1>
+      <p>utilities for controlling the initial size of flex items</p>
+      <br />
+      <h2>setting the flex basis</h2>
+      <p>
+        use the basis-{size} utilities to set the initial size of flex items
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="flex flex-row space-x-4 font-mono text-white text-sm font-bold leading-6"
+        >
+          <div
+            class="basis-1/4 h-14 rounded-lg flex items-center justify-center bg-fuchsia-500 shadow-lg"
+          >
+            01
+          </div>
+          <div
+            class="basis-1/4 h-14 rounded-lg flex items-center justify-center bg-fuchsia-500 shadow-lg"
+          >
+            02
+          </div>
+          <div
+            class="basis-1/2 h-14 rounded-lg flex items-center justify-center bg-fuchsia-500 shadow-lg"
+          >
+            03
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="py-1 px-2">
+      <h1>grid row start end</h1>
+      <p>
+        utilities for controlling how elements are sized and placed across grid
+        rows
+      </p>
+      <br />
+      <h2>spanning rows</h2>
+      <p>use the row-span-{n} utilities to make an element span n rows</p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="grid grid-rows-3 grid-flow-col gap-4 font-mono text-white text-sm text-center font-bold leading-6 bg-stripes-fuchsia rounded-lg"
+        >
+          <div
+            class="p-4 rounded-lg shadow-lg bg-fuchsia-500 grid place-content-center row-span-3"
+          >
+            01
+          </div>
+          <div
+            class="p-4 rounded-lg bg-fuchsia-300 grid place-content-center col-span-2 dark:bg-fuchsia-800 dark:text-fuchsia-400"
+          >
+            02
+          </div>
+          <div
+            class="p-4 rounded-lg shadow-lg bg-fuchsia-500 grid place-content-center row-span-2 col-span-2"
+          >
+            03
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>starting and ending lines</h2>
+      <p>
+        use the row-start-{n} and row-end-{n} utilities to make an element start
+        or end at the nth grid line. these can also be combined with the
+        row-span-{n} utilities to span a specific number of rows. note that css
+        grid lines start at 1, not 0, so full-height element in a 3-row grid
+        would start at line 1 and end at line 4
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="grid grid-rows-3 grid-flow-col gap-4 font-mono text-white text-sm text-center font-bold leading-6 bg-stripes-sky rounded-lg"
+        >
+          <div
+            class="p-4 sm:p-12 rounded-lg shadow-lg bg-blue-500 grid place-content-center row-start-2 row-span-2"
+          >
+            01
+          </div>
+          <div
+            class="p-4 sm:p-12 rounded-lg shadow-lg bg-blue-500 grid place-content-center row-end-3 row-span-2"
+          >
+            02
+          </div>
+          <div
+            class="p-4 sm:p-12 rounded-lg shadow-lg bg-blue-500 grid place-content-center row-start-1 row-end-4"
+          >
+            03
+          </div>
+        </div>
+      </div>
+      <br>
+      
+    </main>
+  </body>
+</html>

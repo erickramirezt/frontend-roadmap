@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="py-1 px-2">
+      <h1>box shadow color</h1>
+      <p>utilities for controlling the color of a box shadow</p>
+      <br />
+      <h2>setting the box shadow color</h2>
+      <p>
+        use the shadow-{color} utilities to change the color of an existing box
+        shadow. by default colored shadows have an opacity of 100%, but you can
+        adjust this using the opacity modifier
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div class="flex flex-col sm:flex-row justify-center gap-8 sm:gap-16">
+          <div class="flex flex-col items-center shrink-0">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400"
+            >
+              shadow-cyan-500/50
+            </p>
+            <button
+              class="py-2 px-3 bg-cyan-500 text-white text-sm font-semibold rounded-md shadow-lg shadow-cyan-500/50 focus:outline-none"
+            >
+              Subscribe
+            </button>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400"
+            >
+              shadow-blue-500/50
+            </p>
+            <button
+              class="py-2 px-3 bg-blue-500 text-white text-sm font-semibold rounded-md shadow-lg shadow-blue-500/50 focus:outline-none"
+            >
+              Subscribe
+            </button>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400"
+            >
+              shadow-indigo-500/50
+            </p>
+            <button
+              class="py-2 px-3 bg-indigo-500 text-white text-sm font-semibold rounded-md shadow-lg shadow-indigo-500/50 focus:outline-none"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>using shadows on colored backgrounds</h2>
+      <p>
+        when using shadows on a colored background, colored shadows can often
+        look more natural than the default black-based shadows, which tend to
+        appear gray and washed-out
+      </p>
+      <div class="flex justify-around bg-indigo-300 px-8 pt-10 pb-12 space-x-6">
+        <div class="flex flex-col items-center">
+          <p class="mb-3 text-sm font-medium text-indigo-900">Default shadow</p>
+          <button class="py-2 px-3 bg-white text-indigo-600 text-sm font-semibold rounded-md shadow-lg focus:outline-none">Subscribe</button>
+        </div>
+        <div class="flex flex-col items-center">
+          <p class="mb-3 text-sm font-medium text-indigo-900">Colored shadow</p>
+          <button class="py-2 px-3 bg-white text-indigo-600 text-sm font-semibold rounded-md shadow-lg shadow-indigo-500/40 focus:outline-none">Subscribe</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

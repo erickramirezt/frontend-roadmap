@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="py-1 px-2">
+      <h1>border collapse</h1>
+      <p>
+        utilities for controlling whether table borders should collapsee or be
+        separated
+      </p>
+      <br />
+      <h2>collapse</h2>
+      <p>
+        use border-collapse to combine adjacent cell borders into a single
+        border when possible. note that this include collapsing borders on the
+        top level table tag
+      </p>
+      <div class="px-4 py-8 sm:px-8">
+        <table
+          class="border-collapse w-full border border-slate-400 dark:border-slate-500 bg-white dark:bg-slate-800 text-sm shadow-sm"
+        >
+          <thead class="bg-slate-50 dark:bg-slate-700">
+            <tr>
+              <th
+                class="w-1/2 border border-slate-300 dark:border-slate-600 font-semibold p-4 text-slate-900 dark:text-slate-200 text-left"
+              >
+                State
+              </th>
+              <th
+                class="w-1/2 border border-slate-300 dark:border-slate-600 font-semibold p-4 text-slate-900 dark:text-slate-200 text-left"
+              >
+                City
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td
+                class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400"
+              >
+                Indiana
+              </td>
+              <td
+                class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400"
+              >
+                Indianapolis
+              </td>
+            </tr>
+            <tr>
+              <td
+                class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400"
+              >
+                Ohio
+              </td>
+              <td
+                class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400"
+              >
+                Columbus
+              </td>
+            </tr>
+            <tr>
+              <td
+                class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400"
+              >
+                Michigan
+              </td>
+              <td
+                class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400"
+              >
+                Detroit
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br />
+      <h2>separate</h2>
+      <p>
+        use border-separate to force each cell to display its own separate
+        borders
+      </p>
+      <table
+        class="border-separate w-full border border-slate-400 dark:border-slate-500 bg-white dark:bg-slate-800 text-sm shadow-sm"
+      >
+        <thead class="bg-slate-50 dark:bg-slate-700">
+          <tr>
+            <th
+              class="w-1/2 border border-slate-300 dark:border-slate-600 font-semibold p-4 text-slate-900 dark:text-slate-200 text-left"
+            >
+              State
+            </th>
+            <th
+              class="w-1/2 border border-slate-300 dark:border-slate-600 font-semibold p-4 text-slate-900 dark:text-slate-200 text-left"
+            >
+              City
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td
+              class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400"
+            >
+              Indiana
+            </td>
+            <td
+              class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400"
+            >
+              Indianapolis
+            </td>
+          </tr>
+          <tr>
+            <td
+              class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400"
+            >
+              Ohio
+            </td>
+            <td
+              class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400"
+            >
+              Columbus
+            </td>
+          </tr>
+          <tr>
+            <td
+              class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400"
+            >
+              Michigan
+            </td>
+            <td
+              class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400"
+            >
+              Detroit
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>

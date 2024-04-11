@@ -1,0 +1,133 @@
+<!-- HTML FORM ELEMENTS -->
+
+<!-- THE HTML <form> ELEMENTS -->
+<!-- THE HTML <form> ELEMENT CAN CONTAIN ONE OR MORE OF THE FOLLOWING FORM ELEMENTS -->
+<!-- <input></input>
+    <label></label>
+    <select></select>
+    <textarea></textarea>
+    <button></button>
+    <fieldset></fieldset>
+    <legend></legend>
+    <datalist></datalist>
+    <output></output>
+    <option></option>
+    <optgroup></optgroup> -->
+
+<!-- THE HTML <input> ELEMENT -->
+<!-- THE HTML <input> ELEMENT IS THE MOST USED FORM ELEMENT -->
+<!-- AN <input> ELEMENT CAN BE DISPLAYED IN MANY WAYS, DEPENDING ON THE TYPE ATTRIBUTE -->
+<!-- EXAMPLE -->
+<label for="fname">First name:</label>
+<input type="text" id="fname" name="fname" />
+
+<!-- THE HTML <label> ELEMENT -->
+<!-- THE HTML <label> ELEMENT DEFINES A LABEL FOR SEVERAL FORM ELEMENTS -->
+<!-- THE <label> ELEMENT IS USEFUL FOR SCREEN-READER USERS, BECAUSE THE SCREEN-READER WILL READ OUT LOUD THE LABEL 
+    WHEN THE USER FOCUSES ON THE INPUT ELEMENT -->
+<!-- THE <label> ELEMENT ALSO HELPS USERS WHO HAVE DIFFICULTY CLICKING ON VERY SMALL REGIONS (SUCH AS RADIO BUTTONS
+    OR CHECKBOXES) - BECAUSE WHEN THE USER CLICKS THE TEXT WITHIN THE <label> ELEMENT, IT TOGGLES THE RADIO BUTTON/
+    CHECKBOX -->
+<!-- THE FOR ATTRIBUTE OF THE <label> TAG SHOULD BE EQUAL TO THE ID ATTRIBUTE OF THE <input> ELEMENT TO BIND THEM 
+    TOGETHER -->
+
+<!-- THE <select> ELEMENT -->
+<!-- THE HTML <select> ELEMENT DEFINES A DROP-DOWN LIST -->
+<!-- EXAMPLE -->
+<label for="cars">Choose a car:</label>
+<select id="cars" name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+<!-- THE <option> ELEMENTS DEFINES AN OPTION THAT CAN BE SELECTED -->
+<!-- BY DEFAULT, THE FIRST IN THE DROP-DOWN LIST IS SELECTED -->
+<!-- TO DEFINE A PRE-SELECTED OPTION, ADD THE SELECTED ATTRIBUTE TO THE OPTION -->
+<!-- EXAMPLE -->
+<option value="fiat" selected>Fiat</option>
+
+<!-- VISIBLE VALUES -->
+<!-- USE THE SIZE ATTRIBUTE TO SPECIFY THE NUMBER OF VISIBLE VALUES -->
+<!-- EXAMPLE -->
+<label for="cars">Choose a car:</label>
+<select id="cars" name="cars" size="3">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+
+<!-- ALLOW MULTIPLE SELECTIONS -->
+<!-- USE THE MULTIPLE ATTRIBUTE TO ALLOW THE USER TO SELECT MORE THAN ONE VALUE -->
+<!-- EXAMPLE -->
+<label for="cars">Choose a car:</label>
+<select id="cars" name="cars" size="4" multiple>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+
+<!-- THE <textarea> ELEMENT -->
+<!-- THE HTML <textarea> ELEMENT DEFINES A MULTI-LINE INPUT FIELD (A TEXT AREA) -->
+<!-- EXAMPLE -->
+<textarea name="message" rows="10" cols="30">
+    The cat was playing in the garden.
+</textarea>
+<!-- THE ROWS ATTRIBUTE SPECIFIES THE VISIBLE NUMBER OF LINES IN A TEXT AREA -->
+<!-- THE COLS ATTRIBUTE SPECIFIES THE VISIBLE WIDTH OF A TEXT AREA -->
+
+<!-- THE <button> ELEMENT -->
+<!-- THE HTML <button> ELEMENT DEFINES A CLICKABLE BUTTON -->
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+<!-- NOTE: ALWAYS SPECIFY THE TYPE ATTRIBUTE FOR THE BUTTON ELEMENT. DIFFERENT BROWSERS MAY USE DIFFERENT DEFAULT
+TYPES FOR THE BUTTON ELEMENT -->
+
+<!-- THE <fieldset> AND <legend> ELEMENTS -->
+<!-- THE HTML <fieldset> ELEMENT IS USED TO GROUP RELATED DATA IN A FORM -->
+<!-- THE HTML <legend> ELEMENT DEFINES A CAPTION FOR THE <fieldset> ELEMENT -->
+<!-- EXAMPLE -->
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label><br />
+    <input type="text" id="fname" name="fname" value="John" /><br />
+    <label for="lname">Last name:</label><br />
+    <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+    <input type="submit" value="Submit" />
+  </fieldset>
+</form>
+
+<!-- THE <datalist> ELEMENT -->
+<!-- THE HTML <datalist> ELEMENT SPECIFIES A LIST OF PRE-DEFINED OPTIONS FOR AN <input> ELEMENT -->
+<!-- USERS WILL SEE A DROP-DOWN LIST OF PRE-DEFINED OPTIONS AS THEY INPUT DATA -->
+<!-- THE LIST ATTRBIUTE OF THE <input> ELEMENT, MUST REFER T THE ID ATTRIBUTE OF THE <datalist> ELEMENT -->
+<!-- EXAMPLE -->
+<form action="/action_page.php">
+  <input list="browsers" />
+  <datalist id="browsers">
+    <option value="Internet Explorer"></option>
+    <option value="Firefox"></option>
+    <option value="Chrome"></option>
+    <option value="Opera"></option>
+    <option value="Safari"></option>
+  </datalist>
+</form>
+
+<!-- THE <output> ELEMENT -->
+<!-- THE HTML <output> ELEMENT REPRESENTS THE RESULT OF A CALCULATION (LIKE ONE PERFORMED BY A SCRIPT) -->
+<!-- EXAMPLE -->
+<form
+  action="/action_page.php"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)"
+>
+  0
+  <input type="range" id="a" name="a" value="50" />
+  100 +
+  <input type="number" id="b" name="b" value="50" />
+  =
+  <output name="x" for="a b"></output>
+  <br /><br />
+  <input type="submit" />
+</form>

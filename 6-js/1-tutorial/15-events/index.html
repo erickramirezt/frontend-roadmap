@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>js events</h1>
+
+    <p>html events are things that happen to html elements</p>
+    <p>when js is used in html pages, js can react on these events</p>
+
+    <p>html events</p>
+    <p>
+      an html event can be something the browser does, or something a use does
+    </p>
+    <p>an html web page has finished loading</p>
+    <p>an html input field</p>
+    <p>an html button was clicked</p>
+    <p>often, when events happen, you may to do something</p>
+    <p>js lets you execute code when events are detected</p>
+    <p>
+      html allows event handler attributes, with js code, to be added to html
+      elements
+    </p>
+    <p>with single quotes</p>
+    <!-- <element event='some js'> -->
+
+    <p>with double quotes</p>
+    <!-- <element event="some js"> -->
+
+    <p>
+      in the following example, an onclick attribute (with code), is added to a
+      button element
+    </p>
+    <button onclick="document.getElementById('demo').innerHTML = Date()">
+      the time is?
+    </button>
+
+    <p>
+      in the example above, the js code changed th content of the element with
+      id="demo"
+    </p>
+    <p>
+      in the next example, the code changes the content of its own element
+      (using this.innerHTML)
+    </p>
+
+    <button onclick="this.innerHTML = Date()">the time is?</button>
+
+    <p>
+      js code is often several lines long. it is more to see event attributes
+      calling functions
+    </p>
+
+    <p>example</p>
+    <button onclick="displayDate()">the time is?</button>
+
+    <p>common html events</p>
+    <p>here is a list of some common html events</p>
+    <table>
+      <tr>
+        <th>event</th>
+        <th>description</th>
+      </tr>
+      <tr>
+        <td>onchange</td>
+        <td>an html element has been changed</td>
+      </tr>
+      <tr>
+        <td>onclick</td>
+        <td>the user clicks an html element</td>
+      </tr>
+      <tr>
+        <td>onmouseover</td>
+        <td>the user moves the mouse over an html element</td>
+      </tr>
+      <tr>
+        <td>onmouseout</td>
+        <td>the user moves the mouse away from an html element</td>
+      </tr>
+      <tr>
+        <td>onkeydown</td>
+        <td>the user pushes a keyboard key</td>
+      </tr>
+      <tr>
+        <td>onload</td>
+        <td>the browser has finished loading the page</td>
+      </tr>
+
+      <p>js event handlers</p>
+      <p>
+        event handler can be used to handle and verify user input, user actions,
+        and browser actions
+      </p>
+      <p>things that should be done every time a page loads</p>
+      <p>things that should be done when the page is closed</p>
+      <p>action that should be performed when a user clicks a button</p>
+      <p>and more...</p>
+
+      <p>many different methods can be used to let js work with events</p>
+      <p>html event attributes can execute js code directly</p>
+      <p>html events attributes can call js functions</p>
+      <p>you can assign your own event handler functions to html elements</p>
+      <p>you can prevent events from being sent or being handled</p>
+      <p>and more...</p>
+    </table>
+  </body>
+</html>

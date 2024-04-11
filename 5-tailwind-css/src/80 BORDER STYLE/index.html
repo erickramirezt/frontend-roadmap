@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="py-1 px-2">
+      <h1>border style</h1>
+      <p>utilities for controlling the style of an element's border</p>
+      <br />
+      <h2>setting the border style</h2>
+      <p>use border-{style} to control an element's border style.</p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="flex flex-col sm:flex-row items-center justify-around gap-4 text-white text-sm text-center font-bold leading-6"
+        >
+          <div class="flex flex-col items-center shrink-0">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400"
+            >
+              border-solid
+            </p>
+            <button
+              class="px-4 py-2 font-semibold text-sm bg-white text-slate-700 dark:bg-slate-700 dark:text-white rounded-md shadow-sm ring-1 ring-slate-900/5 border-indigo-500 dark:border-sky-500 border-2 border-solid"
+            >
+              Button A
+            </button>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400"
+            >
+              border-dashed
+            </p>
+            <button
+              class="px-4 py-2 font-semibold text-sm bg-white text-slate-700 dark:bg-slate-700 dark:text-white rounded-md shadow-sm ring-1 ring-slate-900/5 border-indigo-500 dark:border-sky-500 border-2 border-dashed"
+            >
+              Button A
+            </button>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400"
+            >
+              border-dotted
+            </p>
+            <button
+              class="px-4 py-2 font-semibold text-sm bg-white text-slate-700 dark:bg-slate-700 dark:text-white rounded-md shadow-sm ring-1 ring-slate-900/5 border-indigo-500 dark:border-sky-500 border-2 border-dotted"
+            >
+              Button A
+            </button>
+          </div>
+          <div class="flex flex-col items-center shrink-0">
+            <p
+              class="font-medium text-sm text-slate-500 font-mono text-center mb-3 dark:text-slate-400"
+            >
+              border-double
+            </p>
+            <button
+              class="px-4 py-2 font-semibold text-sm bg-white text-slate-700 dark:bg-slate-700 dark:text-white rounded-md shadow-sm ring-1 ring-slate-900/5 border-indigo-500 dark:border-sky-500 border-4 border-double"
+            >
+              Button A
+            </button>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>no style</h2>
+      <p>
+        use border-none to remove an existing border style from an element. this
+        is most commonly used to remove a border style that was applied at a
+        smaller breakpoint
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8"><div class="flex justify-center gap-4 text-white text-sm text-center font-bold leading-6">
+        <button class="px-4 py-2 font-semibold text-sm bg-white text-slate-700 dark:bg-slate-700 dark:text-white rounded-md shadow-sm ring-1 ring-slate-900/5 dark:ring-white/10 dark:ring-inset border-indigo-500 border-2 border-none">Save Changes</button>
+      </div></div>
+    </main>
+  </body>
+</html>

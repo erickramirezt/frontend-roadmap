@@ -1,0 +1,112 @@
+<!-- HTML INPUT FORM* ATTRIBUTES -->
+
+<!-- THE FORM ATTRIBUTE -->
+<!-- THE INPUT FORM ATTRIBUTE SPECIFIES THE FORM THE <input> ELEMENT BELONGS TO -->
+<!-- THE VALUE OF THIS ATTRIBUTE MUST BE EQUAL TO THE ID ATTRIBUTE OF THE <form> ELEMENT IT BELONGS TO -->
+<!-- EXAMPLE -->
+<form action="/action_page.php" id="form1">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" /><br /><br />
+  <input type="submit" value="Submit" />
+</form>
+
+<label for="lname">Last name:</label>
+<input type="text" id="lname" name="lname" form="form1" />
+
+<!-- THE FORMACTION ATTRIBUTE -->
+<!-- THE INPUT FORMACTION ATTRIBUTE SPECIFIES WHERE TO SEND THE FORM DATA WHEN A FORM IS SUBMITTED -->
+<!-- NOTE: THIS ATTRIBUTE OVERRIDES THE ACTION ATTRIBUTE OF THE <form> ELEMENT -->
+<!-- THE FORMACTION ATTRIBUTE WORKS WITH THE FOLLOWING INPUT TYPES: SUBMIT AND IMAGE -->
+<!-- EXAMPLE -->
+<form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" /><br /><br />
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname" /><br /><br />
+  <input type="submit" value="Submit" />
+  <input type="submit" formaction="/action_page2.php" value="Submit as Admin" />
+</form>
+
+<!-- THE FORMENCTYPE ATTRIBUTE -->
+<!-- THE INPUT FORMENCTYPE ATTRIBUTE SPECIFIES HOW THE FORM-DATA SHOULD BE ENCODED WHEN SUBMITTED (ONLY FOR 
+    FORMS WITH METHOD="POST") -->
+<!-- NOTE: THIS ATTRIBUTE OVERRIDES THE ENCTYPE ATTRIBUTE OF THE <form> ELEMENT -->
+<!-- THE FORMENCTYPE ATTRIBUTE WORKS WITH FOLLOWING INPUT TYPES: SUBMIT AND IMAGE -->
+<!-- EXAMPLE -->
+<form action="/action_page_binary.asp" method="post">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" /><br /><br />
+  <input type="submit" value="Submit" />
+  <input
+    type="submit"
+    formenctype="multipart/form-data"
+    value="Submit as Multipart/form-data"
+  />
+</form>
+
+<!-- THE FORMMETHOD ATTRIBUTE -->
+<!-- THE INPUT FORMMETHOD ATTRIBUTE DEFINES THE HTTP METHOD FOR SENDING FORM-DATA TO THE ACTION URL -->
+<!-- NOTE: THIS ATTRIBUTE OVERRIDES THE METHOD ATTRIBUTE OF THE <form> ELEMENT -->
+<!-- THE FORMMETHOD ATTRIBUTE WORKS WITH THE FOLLOWING INPUT TYPES: SUBMIT AND IMAGE -->
+<!-- THE FORM-DATA CAN BE SENT AS URL VARIABLES (METHOD="GET") OR AS AN HTTP POST TRANSACTION (METHOD="POST") -->
+<!-- NOTES ON GET: -->
+<!-- APPENDS FORM-DATA INTO THE URL IN NAME/VALUE PAIRS -->
+<!-- NEVER USE GET TO SEND SENSITIVE DATA! (THE SUBMITTED FORM DATA IS VISIBLE IN THE URL) -->
+<!-- THE LENGHT OF THE URL IS LIMITED (2048 CHARACTERS) -->
+<!-- USEFUL FOR FORM SUBMISSIONS WHERE A USER WANTS TO BOOKMARK THE RESULT -->
+<!-- GET IS BETTER FOR NON-SECURE DATA, LIKE QUERY STRINGS IN GOOGLE -->
+
+<!-- NOTES ON POST: -->
+<!-- APPENDS FORM-DATA INSIDE THE BODY OF THE HTTP REQUEST (THE SUBMITTED FORM DATA IS NOT SHOWN IN THE URL) -->
+<!-- POST HAS NO SIZE LIMITATIONS, AND CAN BE USED TO SEND LARGE AMMOUNTS OF DATA -->
+<!-- FORM SUBMISSIONS WITH POST CANNOT BE BOOKMARKED -->
+<!-- TIP: ALWAYS USE POST IF THE FORM DATA CONTAINS SENSITIVE OR PERSONAL INFORMATION -->
+
+<!-- EXAMPLE -->
+<form action="/action_page.php" method="get">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" /><br /><br />
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname" /><br /><br />
+  <input type="submit" value="Submit using GET" />
+  <input type="submit" formmethod="post" value="Submit using POST" />
+</form>
+
+<!-- THE FORMTARGET ATTRIBUTE -->
+<!-- THE INPUT FORMTARGET ATTRIBUTE SPECIFIES WHERE TO DISPLAY THE RESPONSE AFTER SUBMITTING THE FORM -->
+<!-- NOTE: THIS ATTRIBUTE OVERRIDES THE TARGET ATTRIBUTE OF THE <form> ELEMENT -->
+<!-- THE FORMTARGET ATTRIBUTE WORKS WITH THE FOLLOWING INPUT TYPES: SUBMIT AND IMAGE -->
+<!-- EXAMPLE -->
+<form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" /><br /><br />
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname" /><br /><br />
+  <input type="submit" value="Submit" />
+  <input type="submit" formtarget="_blank" value="Submit to a new window/tab" />
+</form>
+
+<!-- THE FORMNOVALIDATE ATTRIBUTE -->
+<!-- THE INPUT FORMNOVALIDATE ATTRIBUTE SPECIFIES THAT THE FORM SHOULD NOT BE VALIDATED WHEN SUBMITTED -->
+<!-- NOTE: THIS ATTRIBUTE OVERRIDES THE NOVALIDATE ATTRIBUTE OF THE <form> ELEMENT -->
+<!-- THE FORMNOVALIDATE ATTRIBUTE WORKS WITH THE FOLLOWING INPUT TYPES: SUBMIT -->
+<form action="/action_page.php">
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email" /><br /><br />
+  <input type="submit" value="Submit" />
+  <input
+    type="submit"
+    formnovalidate="formnovalidate"
+    value="Submit without validation"
+  />
+</form>
+
+<!-- THE NOVALIDATE ATTRIBUTE -->
+<!-- THE NOVALIDATE ATTRIBUTE IS A <form> ATTRIBUTE -->
+<!-- WHEN PRESENT, NOVALIDATE SPECIFIES THAT ALL OF THE FORM-DATA SHOULD NOT BE VALIDATED WHEN SUBMITTED -->
+<!-- EXAMPLE -->
+<form action="/action_page.php" novalidate>
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email" /><br /><br />
+  <input type="submit" value="Submit" />
+</form>

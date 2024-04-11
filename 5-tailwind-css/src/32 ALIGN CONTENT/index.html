@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="py-1 px-2">
+      <h1>align content</h1>
+      <p>
+        utilities for controlling how rows are positioned in multi-row flex and
+        grid containers
+      </p>
+      <br />
+      <h2>start</h2>
+      <p>
+        use content-start to pack rows in a container against the start of the
+        cross axis
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div class="font-mono text-white text-sm font-bold leading-6">
+          <div
+            class="grid grid-cols-3 gap-4 content-start w-full rounded-lg bg-stripes-purple text-center h-56"
+          >
+            <div class="p-4 shadow-lg rounded-lg bg-purple-500">01</div>
+            <div class="p-4 shadow-lg rounded-lg bg-purple-500">02</div>
+            <div class="p-4 shadow-lg rounded-lg bg-purple-500">03</div>
+            <div class="p-4 shadow-lg rounded-lg bg-purple-500">04</div>
+            <div class="p-4 shadow-lg rounded-lg bg-purple-500">05</div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>center</h2>
+      <p>
+        use content-center to pack rows in a container in the center of the
+        cross axis
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div class="font-mono text-white text-sm font-bold leading-6">
+          <div
+            class="grid grid-cols-3 gap-4 content-center w-full rounded-lg bg-stripes-sky text-center h-56"
+          >
+            <div class="p-4 shadow-lg rounded-lg bg-sky-500">01</div>
+            <div class="p-4 shadow-lg rounded-lg bg-sky-500">02</div>
+            <div class="p-4 shadow-lg rounded-lg bg-sky-500">03</div>
+            <div class="p-4 shadow-lg rounded-lg bg-sky-500">04</div>
+            <div class="p-4 shadow-lg rounded-lg bg-sky-500">05</div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>end</h2>
+      <p>
+        use content-end to pack rows in a container against the end of the cross
+        axis
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div class="font-mono text-white text-sm font-bold leading-6">
+          <div
+            class="grid grid-cols-3 gap-4 content-end w-full rounded-lg bg-stripes-pink text-center h-56"
+          >
+            <div class="p-4 shadow-lg rounded-lg bg-pink-500">01</div>
+            <div class="p-4 shadow-lg rounded-lg bg-pink-500">02</div>
+            <div class="p-4 shadow-lg rounded-lg bg-pink-500">03</div>
+            <div class="p-4 shadow-lg rounded-lg bg-pink-500">04</div>
+            <div class="p-4 shadow-lg rounded-lg bg-pink-500">05</div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>space between</h2>
+      <p>
+        use content-between to distribute rows in a container such that there is
+        an equal amount of space between each line
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div class="font-mono text-white text-sm font-bold leading-6">
+          <div
+            class="grid grid-cols-3 gap-4 content-between w-full rounded-lg bg-stripes-violet text-center h-56"
+          >
+            <div class="p-4 shadow-lg rounded-lg bg-violet-500">01</div>
+            <div class="p-4 shadow-lg rounded-lg bg-violet-500">02</div>
+            <div class="p-4 shadow-lg rounded-lg bg-violet-500">03</div>
+            <div class="p-4 shadow-lg rounded-lg bg-violet-500">04</div>
+            <div class="p-4 shadow-lg rounded-lg bg-violet-500">05</div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>space around</h2>
+      <p>
+        use content-around to distribute rows in a container such that there is
+        an equal amount of space each line
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div class="font-mono text-white text-sm font-bold leading-6">
+          <div
+            class="grid grid-cols-3 gap-x-4 content-around w-full rounded-lg bg-stripes-blue text-center h-56"
+          >
+            <div class="p-4 shadow-lg rounded-lg bg-blue-500">01</div>
+            <div class="p-4 shadow-lg rounded-lg bg-blue-500">02</div>
+            <div class="p-4 shadow-lg rounded-lg bg-blue-500">03</div>
+            <div class="p-4 shadow-lg rounded-lg bg-blue-500">04</div>
+            <div class="p-4 shadow-lg rounded-lg bg-blue-500">05</div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>space evenly</h2>
+      <p>
+        use content-evenly to distribute rows in a container such that is an
+        equal amount of space around each item, but also accounting for the
+        doubling of space you would normally see between each item wen using
+        content-around
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div class="font-mono text-white text-sm font-bold leading-6">
+          <div
+            class="grid grid-cols-3 gap-x-4 content-evenly w-full rounded-lg bg-stripes-indigo text-center h-56"
+          >
+            <div class="p-4 shadow-lg rounded-lg bg-indigo-500">01</div>
+            <div class="p-4 shadow-lg rounded-lg bg-indigo-500">02</div>
+            <div class="p-4 shadow-lg rounded-lg bg-indigo-500">03</div>
+            <div class="p-4 shadow-lg rounded-lg bg-indigo-500">04</div>
+            <div class="p-4 shadow-lg rounded-lg bg-indigo-500">05</div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>stretch</h2>
+      <p>
+        use content-stretch to allow content items to fill the available space
+        along the container's cross axis
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div class="font-mono text-white text-sm font-bold leading-6">
+          <div
+            class="grid grid-cols-3 gap-4 content-stretch w-full rounded-lg bg-stripes-fuchsia text-center h-56"
+          >
+            <div
+              class="p-4 flex justify-center items-center shadow-lg rounded-lg bg-fuchsia-500"
+            >
+              01
+            </div>
+            <div
+              class="p-4 flex justify-center items-center shadow-lg rounded-lg bg-fuchsia-500"
+            >
+              02
+            </div>
+            <div
+              class="p-4 flex justify-center items-center shadow-lg rounded-lg bg-fuchsia-500"
+            >
+              03
+            </div>
+            <div
+              class="p-4 flex justify-center items-center shadow-lg rounded-lg bg-fuchsia-500"
+            >
+              04
+            </div>
+            <div
+              class="p-4 flex justify-center items-center shadow-lg rounded-lg bg-fuchsia-500"
+            >
+              05
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h2>normal</h2>
+      <p>
+        use content-normal to pack content items in their default position as if
+        no align-content value was set
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div class="font-mono text-white text-sm font-bold leading-6">
+          <div
+            class="grid grid-cols-3 gap-4 w-full rounded-lg bg-stripes-indigo text-center h-56"
+          >
+            <div
+              class="p-4 flex justify-center items-center shadow-lg rounded-lg bg-indigo-500"
+            >
+              01
+            </div>
+            <div
+              class="p-4 flex justify-center items-center shadow-lg rounded-lg bg-indigo-500"
+            >
+              02
+            </div>
+            <div
+              class="p-4 flex justify-center items-center shadow-lg rounded-lg bg-indigo-500"
+            >
+              03
+            </div>
+            <div
+              class="p-4 flex justify-center items-center shadow-lg rounded-lg bg-indigo-500"
+            >
+              04
+            </div>
+            <div
+              class="p-4 flex justify-center items-center shadow-lg rounded-lg bg-indigo-500"
+            >
+              05
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

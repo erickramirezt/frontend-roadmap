@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="py-1 px-2">
+      <h1>gap</h1>
+      <p>utilities for controlling gutters between grid and flexbox items</p>
+      <br />
+      <h2>setting the gap between elements</h2>
+      <p>
+        use gap-{size} to change the gap between both rows and columns in grid
+        and flexbox layout
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="grid grid-cols-2 gap-4 font-mono text-white text-sm text-center font-bold leading-6 bg-stripes-violet rounded-lg"
+        >
+          <div class="p-4 rounded-lg shadow-lg bg-violet-500">01</div>
+          <div class="p-4 rounded-lg shadow-lg bg-violet-500">02</div>
+          <div class="p-4 rounded-lg shadow-lg bg-violet-500">03</div>
+          <div class="p-4 rounded-lg shadow-lg bg-violet-500">04</div>
+        </div>
+      </div>
+      <br />
+      <h2>changing row and column gaps independently</h2>
+      <p>
+        use gap-x-size and gap-y-size to change the gap between rows and columns
+        independently
+      </p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div
+          class="grid grid-cols-3 gap-x-8 gap-y-4 font-mono text-white text-sm text-center font-bold leading-6 bg-stripes-sky rounded-lg"
+        >
+          <div class="p-4 rounded-lg shadow-lg bg-sky-500">01</div>
+          <div class="p-4 rounded-lg shadow-lg bg-sky-500">02</div>
+          <div class="p-4 rounded-lg shadow-lg bg-sky-500">03</div>
+          <div class="p-4 rounded-lg shadow-lg bg-sky-500">04</div>
+          <div class="p-4 rounded-lg shadow-lg bg-sky-500">05</div>
+          <div class="p-4 rounded-lg shadow-lg bg-sky-500">06</div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

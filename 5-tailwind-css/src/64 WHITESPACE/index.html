@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="py-1 px-2">
+      <h1>whitespace</h1>
+      <p>utilities for controlling an element's white-space property</p>
+      <br />
+      <h2>normal</h2>
+      <p>
+        use whitespace-normal to cause text to wrap normally within an element.
+        newlines and spaces will be collapsed
+      </p>
+      <div
+        class="bg-white p-8 shadow-xl text-slate-700 max-w-md mx-auto overflow-auto text-sm leading-6 sm:text-base sm:leading-7 dark:bg-slate-800 dark:text-slate-400"
+      >
+        <div class="whitespace-normal">
+          Hey everyone! It's almost 2022 and we still don't know if there is
+          aliens living among us, or do we? Maybe the person writing this is an
+          alien. You will never know.
+        </div>
+      </div>
+      <br />
+      <h2>no wrap</h2>
+      <p>
+        use whitespace-nowrap to prevent text from wrapping within an element.
+        newlines and spaces will be collapsed
+      </p>
+      <div
+        class="bg-white px-6 py-8 shadow-xl text-slate-700 max-w-md mx-auto overflow-auto text-sm leading-6 sm:text-base sm:leading-7 dark:bg-slate-800 dark:text-slate-400"
+      >
+        <div class="whitespace-nowrap">
+          Hey everyone! It's almost 2022 and we still don't know if there is
+          aliens living among us, or do we? Maybe the person writing this is an
+          alien. You will never know.
+        </div>
+      </div>
+      <br />
+      <h2>pre</h2>
+      <p>
+        use whitespace-pre to preserve newlines and spaces within an element.
+        text will not be wrapped
+      </p>
+      <div
+        class="bg-white px-6 py-8 shadow-xl text-slate-700 max-w-md mx-auto overflow-auto text-sm leading-6 sm:text-base sm:leading-7 dark:bg-slate-800 dark:text-slate-400"
+      >
+        <div class="whitespace-pre">
+          Hey everyone! It's almost 2022 and we still don't know if there is
+          aliens living among us, or do we? Maybe the person writing this is an
+          alien. You will never know.
+        </div>
+      </div>
+      <br />
+      <h2>pre line</h2>
+      <p>
+        use whitespace-pre-line to preserve newlines but not spaces within an
+        element. text will be wrapped normally
+      </p>
+      <div
+        class="bg-white px-6 py-8 shadow-xl text-slate-700 max-w-md mx-auto overflow-auto text-sm leading-6 sm:text-base sm:leading-7 dark:bg-slate-800 dark:text-slate-400"
+      >
+        <div class="whitespace-pre-line">
+          Hey everyone! It's almost 2022 and we still don't know if there is
+          aliens living among us, or do we? Maybe the person writing this is an
+          alien. You will never know.
+        </div>
+      </div>
+      <br />
+      <h2>pre wrap</h2>
+      <p>
+        use whitespace-pre-wrap to preserve newlines and spaces within an
+        element. text will be wrapped normally
+      </p>
+      <div
+        class="bg-white px-6 py-8 shadow-xl text-slate-700 max-w-md mx-auto overflow-auto text-sm leading-6 sm:text-base sm:leading-7 dark:bg-slate-800 dark:text-slate-400"
+      >
+        <div class="whitespace-pre-wrap">
+          Hey everyone! It's almost 2022 and we still don't know if there is
+          aliens living among us, or do we? Maybe the person writing this is an
+          alien. You will never know.
+        </div>
+      </div>
+      <br />
+      <h2>break spaces</h2>
+      <p>
+        use whitespace-break-space to preserve newlines and spaces within an
+        element. white space at the end of lines will not hang, but will wrap to
+        the next line
+      </p>
+      <div class="relative rounded-xl overflow-auto">
+        <div
+          class="bg-white px-6 py-8 shadow-xl text-slate-700 max-w-md mx-auto overflow-auto text-sm leading-6 sm:text-base sm:leading-7 dark:bg-slate-800 dark:text-slate-400"
+        >
+          <div class="whitespace-break-spaces">
+            Hey everyone! It's almost 2022 and we still don't know if there is
+            aliens living among us, or do we? Maybe the person writing this is
+            an alien. You will never know.
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

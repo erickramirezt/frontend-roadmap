@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="py-1 px-2">
+      <h1>resize</h1>
+      <p>utilities for controlling how an element can be resized</p>
+      <br />
+      <h2>resizing in all directions</h2>
+      <p>use resize to make an element horizontally and vertically resizable</p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div class="w-full flex items-center justify-center">
+          <textarea
+            class="resize text-sm p-2 w-80 ring-1 ring-slate-900/10 shadow-sm rounded-md dark:bg-slate-800 dark:ring-0 dark:highlight-white/5"
+            rows="3"
+          ></textarea>
+        </div>
+      </div>
+      <br />
+      <h2>resizing vertically</h2>
+      <p>use resize-y to make an element vertically resizable</p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div class="w-full flex items-center justify-center">
+          <textarea
+            class="resize-y text-sm p-2 w-80 ring-1 ring-slate-900/10 shadow-sm rounded-md dark:bg-slate-800 dark:ring-0 dark:highlight-white/5"
+            rows="3"
+          ></textarea>
+        </div>
+      </div>
+      <br />
+      <h2>resizing horizontally</h2>
+      <p>use resize-x to make an element horizontally resizable</p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div class="w-full flex items-center justify-center">
+          <textarea
+            class="resize-x text-sm p-2 w-80 ring-1 ring-slate-900/10 shadow-sm rounded-md dark:bg-slate-800 dark:ring-0 dark:highlight-white/5"
+            rows="3"
+          ></textarea>
+        </div>
+      </div>
+      <br />
+      <h2>preventing resizing</h2>
+      <p>use resize-none to prevent an element from being resizable</p>
+      <div class="relative rounded-xl overflow-auto p-8">
+        <div class="w-full flex items-center justify-center">
+          <textarea
+            class="resize-none text-sm p-2 w-80 ring-1 ring-slate-900/10 shadow-sm rounded-md dark:bg-slate-800 dark:ring-0 dark:highlight-white/5"
+            rows="3"
+          ></textarea>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

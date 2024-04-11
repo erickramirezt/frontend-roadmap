@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="py-1 px-2">
+      <h1>clear</h1>
+      <p>utilities for controlling the wrapping of content around an element</p>
+      <br />
+      <h2>clearing left-floated elements</h2>
+      <p>
+        use clear-left to position an element below any preceding left-floated
+        elements
+      </p>
+      <div class="relative rounded-xl overflow-auto">
+        <div
+          class="mx-4 bg-white shadow-xl p-8 text-slate-700 text-sm sm:text-base leading-6 sm:leading-7 dark:bg-slate-800 dark:text-slate-400"
+        >
+          <div class="float-left mr-6 mb-4 rounded-xl overflow-hidden">
+            <div
+              class="relative aspect-w-4 aspect-h-5 sm:aspect-w-16 sm:aspect-h-9 w-28 sm:w-64"
+            >
+              <img
+                class="object-cover"
+                src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=320&amp;q=80"
+              />
+              <div
+                class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-xl"
+              ></div>
+            </div>
+          </div>
+          <div class="float-right mb-4 rounded-xl overflow-hidden">
+            <div
+              class="relative aspect-w-4 aspect-h-5 sm:aspect-w-16 sm:aspect-h-9 w-20 sm:w-44"
+            >
+              <img
+                class="object-cover"
+                src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=320&amp;q=80"
+              />
+              <div
+                class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-xl"
+              ></div>
+            </div>
+          </div>
+          <p class="clear-right text-justify">
+            Maybe we can live without libraries, people like you and me. Maybe.
+            Sure, we're too old to change the world, but what about that kid,
+            sitting down, opening a book, right now, in a branch at the local
+            library and finding drawings of pee-pees and wee-wees on the Cat in
+            the Hat and the Five Chinese Brothers? Doesn't HE deserve better?
+            Look. If you think this is about overdue fines and missing books,
+            you'd better think again. This is about that kid's right to read a
+            book without getting his mind warped! Or: maybe that turns you on,
+            Seinfeld; maybe that's how y'get your kicks. You and your good-time
+            buddies.
+          </p>
+        </div>
+      </div>
+      <br />
+      <h2>clearing right-floted elements</h2>
+      <p>
+        use clear-right to position an element below any preceding right-floated
+        elements
+      </p>
+      <div class="relative rounded-xl overflow-auto">
+        <div
+          class="mx-4 bg-white shadow-xl p-8 text-slate-700 text-sm sm:text-base leading-6 sm:leading-7 dark:bg-slate-800 dark:text-slate-400"
+        >
+          <div class="float-left mr-6 mb-4 rounded-xl overflow-hidden">
+            <div
+              class="relative aspect-w-4 aspect-h-5 sm:aspect-w-16 sm:aspect-h-9 w-28 sm:w-64"
+            >
+              <img
+                class="object-cover"
+                src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=320&amp;q=80"
+              />
+              <div
+                class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-xl"
+              ></div>
+            </div>
+          </div>
+          <div class="float-right mb-4 rounded-xl overflow-hidden">
+            <div
+              class="relative aspect-w-4 aspect-h-5 sm:aspect-w-16 sm:aspect-h-9 w-20 sm:w-44"
+            >
+              <img
+                class="object-cover"
+                src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=320&amp;q=80"
+              />
+              <div
+                class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-xl"
+              ></div>
+            </div>
+          </div>
+          <p class="clear-right text-justify">
+            Maybe we can live without libraries, people like you and me. Maybe.
+            Sure, we're too old to change the world, but what about that kid,
+            sitting down, opening a book, right now, in a branch at the local
+            library and finding drawings of pee-pees and wee-wees on the Cat in
+            the Hat and the Five Chinese Brothers? Doesn't HE deserve better?
+            Look. If you think this is about overdue fines and missing books,
+            you'd better think again. This is about that kid's right to read a
+            book without getting his mind warped! Or: maybe that turns you on,
+            Seinfeld; maybe that's how y'get your kicks. You and your good-time
+            buddies.
+          </p>
+        </div>
+      </div>
+      <br />
+      <h2>clearing all floated elements</h2>
+      <p>
+        use clear-both to position an element below all preceding floated
+        elements
+      </p>
+      <div class="relative rounded-xl overflow-auto">
+        <div
+          class="mx-4 bg-white shadow-xl p-8 text-slate-700 text-sm sm:text-base leading-6 sm:leading-7 dark:bg-slate-800 dark:text-slate-400"
+        >
+          <div class="float-left mb-4 rounded-xl overflow-hidden">
+            <div class="relative aspect-w-16 aspect-h-9 w-44">
+              <img
+                class="object-cover"
+                src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=320&amp;q=80"
+              />
+              <div
+                class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-xl"
+              ></div>
+            </div>
+          </div>
+          <div class="float-right ml-6 mb-4 rounded-xl overflow-hidden">
+            <div class="relative aspect-w-16 aspect-h-9 w-64">
+              <img
+                class="object-cover"
+                src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=320&amp;q=80"
+              />
+              <div
+                class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-xl"
+              ></div>
+            </div>
+          </div>
+          <p class="clear-both text-justify">
+            Maybe we can live without libraries, people like you and me. Maybe.
+            Sure, we're too old to change the world, but what about that kid,
+            sitting down, opening a book, right now, in a branch at the local
+            library and finding drawings of pee-pees and wee-wees on the Cat in
+            the Hat and the Five Chinese Brothers? Doesn't HE deserve better?
+            Look. If you think this is about overdue fines and missing books,
+            you'd better think again. This is about that kid's right to read a
+            book without getting his mind warped! Or: maybe that turns you on,
+            Seinfeld; maybe that's how y'get your kicks. You and your good-time
+            buddies.
+          </p>
+        </div>
+      </div>
+      <br />
+      <h2>disabling applied clears</h2>
+      <p>
+        use clear-none to reset any clears that are applied to an element. this
+        is the default value for the clear property
+      </p>
+      <div class="relative rounded-xl overflow-auto">
+        <div
+          class="mx-4 bg-white shadow-xl p-8 text-slate-700 dark:bg-slate-800 dark:text-slate-400"
+        >
+          <div class="relative float-left mr-6 mb-4 rounded-xl overflow-hidden">
+            <div class="relative aspect-w-16 aspect-h-9 w-44">
+              <img
+                class="h-24 object-cover"
+                src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=320&amp;q=80"
+              />
+              <div
+                class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-xl"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="relative float-right ml-6 mb-4 rounded-xl overflow-hidden"
+          >
+            <div class="relative aspect-w-16 aspect-h-9 w-64">
+              <img
+                class="h-36 object-cover"
+                src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=320&amp;q=80"
+              />
+              <div
+                class="absolute inset-0 ring-1 ring-inset ring-black/10 rounded-xl"
+              ></div>
+            </div>
+          </div>
+          <p class="clear-none text-justify">
+            Maybe we can live without libraries, people like you and me. Maybe.
+            Sure, we're too old to change the world, but what about that kid,
+            sitting down, opening a book, right now, in a branch at the local
+            library and finding drawings of pee-pees and wee-wees on the Cat in
+            the Hat and the Five Chinese Brothers? Doesn't HE deserve better?
+            Look. If you think this is about overdue fines and missing books,
+            you'd better think again. This is about that kid's right to read a
+            book without getting his mind warped! Or: maybe that turns you on,
+            Seinfeld; maybe that's how y'get your kicks. You and your good-time
+            buddies.
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
