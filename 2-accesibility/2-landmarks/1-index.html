@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>accesibility landmarks</h1>
+
+    <h2>why</h2>
+    <p>
+      with landmarks, blind userd using a screen reader have the ability to jump
+      to sections of a web page
+    </p>
+
+    <h2>what</h2>
+    <p>
+      in html there are some semantic elements that can be used to define
+      different parts of a web page:
+    </p>
+    <ul>
+      <li>header</li>
+      <li>nav</li>
+      <li>main</li>
+      <li>aside</li>
+      <li>section</li>
+      <li>footer</li>
+    </ul>
+
+    <h2>how</h2>
+    <p>
+      the front page of the white house is using landmarks. it consists of a
+      header at the top, a main containing all the main content and a footer
+      with some nav elements at the bottom
+    </p>
+    <p>
+      one way to visualize landmarks is to use the tool
+      <a href="https://accessibilityinsights.io/">accesibility insights</a>. one
+      of the features is that it highlights the landmarks, as we can see in the
+      following screenshot
+    </p>
+
+    <h2>Roles</h2>
+    <p>
+      but wait, it shows banner, contentinfo and navigation. this is a bit
+      confusing. the reason is that each landmark element has a corresponding
+      role.
+    </p>
+    <p>
+      a header has a built in role of banner. this means that both header,
+      header role="banner" and div role="banner" are more or less equivalent.
+      for most cases, header will be sufficient
+    </p>
+    <p>
+      the same is true for nav, which has role="navigation" built in. main is
+      easier, it has role="main". and then we have fotter with its
+      role="contentinfo"
+    </p>
+
+    <h2>more than one of each landmark</h2>
+    <p>
+      a rule of thumb is to only use one main per page. when we use more than
+      one type of landmark, like multiple navs, we must label each of them. this
+      is done with attribute aria-label
+    </p>
+    <p>
+      in the footer of the white house, we have three navs each with an
+      aria-label, like aria-label="social navigation". this means that a screen
+      reader user can skip directly to the social navigation.
+      aria-label="social" should be fine though
+    </p>
+
+    <h2>the aside and section tags</h2>
+    <p>
+      ever since the landmarks were introduced to html, developers have been
+      confused. two of the elements that people find vaguely defined are aside
+      and section. the big difference is that an aside is related to the main
+      content and the section is not related
+    </p>
+    <p>
+      the contact page of the white house uses both and aside and a section. the
+      three sharing buttons are inside an aside. this makes sense, they are
+      related to the main content
+    </p>
+    <p>
+      the stay connected is a section. it is not related to the main content,
+      and no other landmark will be appropiate. one improvement that the white
+      house can do with these landmarks is to add labels. this will be better
+      for a screen reader user. secton aria-label="newsletter" and aside
+      aria-label="share this page"
+    </p>
+  </body>
+</html>
