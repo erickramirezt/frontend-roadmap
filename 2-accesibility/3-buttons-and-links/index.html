@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>accesibility buttons and links</h1>
+    <h2>why</h2>
+    <p>
+      buttons and links are specific types of interactive components. each of
+      them work different with assistive technologies. the correct use of each
+      component helps users with assistive technologies to interact with the
+      component
+    </p>
+    <h2>what</h2>
+    <p>
+      the button element should be used for any interaction that performs an
+      action on the current page. the a element should be used for any
+      interaction that navigates to another view.
+    </p>
+    <h2>how</h2>
+    <p>
+      in the introduction, we saw that the visual design does not dictate which
+      html element we should use. a link that looks like a button, but behaves
+      like a link, is an a
+    </p>
+    <p>
+      both the button sign up to drive and the link underneath is coded as an a.
+      so when should we use a button, then?
+    </p>
+    <p>
+      the first section of the header has five elements - a logo, a dropdown
+      menu and three links. one of them is coded as a button
+    </p>
+    <p>
+      clicking company opens a drop down menu. this is an interaction that
+      performs an action on the current page. using button here is the correct
+      thing to do. the underlying links, about us, our offerings and son on, are
+      correctly coded with a elements
+    </p>
+    <p>
+      the arrow indicates that this is a button with a dropdown menu, that
+      changes direction when opened. this is a nice extra visual cue
+    </p>
+    <p>
+      one benefit with this, is that semantic html gives context to screen
+      readers, which read the contents of a page out loud.
+    </p>
+    <p>in this case, a div is wrong. why?</p>
+    <ul>
+      <li>buttons have more suitable styling by default</li>
+      <li>a screen reader identifies it as a button</li>
+      <li>it is focusable</li>
+      <li>it is clickable</li>
+    </ul>
+    <p>
+      both a link and a button are accesible for people relying on keyboard-only
+      navigation; it can be clickable with both mouse and keys, and it can be
+      tabbed between using the tab key on keyboard
+    </p>
+
+    <h2>proper links</h2>
+    <p>
+      links take users from one page to antoher, or sometimes to another part of
+      the page. for a link to be accesible, remember to
+    </p>
+    <ul>
+      <li>use the href attribute to specify the link destination</li>
+      <li>
+        use a proper url in the href attribute. the url can be absolute or
+        relative
+      </li>
+      <li>not simulate a link with other elements like span or div</li>
+      <li>
+        open the link in the current window. it is not recomended to open links
+        in a new window
+      </li>
+    </ul>
+    <p>
+      the link about us from the uber example is coded like this, a bit
+      simplified
+    </p>
+    <a href="/about/">About us</a>
+    <p>this is a proper and healthy link</p>
+  </body>
+</html>

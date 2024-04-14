@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>accesibility role, name and value</h1>
+    <h2>why</h2>
+    <p>
+      user interface components need a role, a name and sometimes a value, to
+      ensure that people using assistive technologies are able to use them.
+      examples of assistive technologies are screen readers, switch controls and
+      speech recognition software
+    </p>
+    <h2>what</h2>
+    <p>
+      there are two cases where we can't use a good html element with built-in
+      accesibility features. event though we want to
+    </p>
+    <ul>
+      <li>there is no native html element for what we are trying to achieve</li>
+      <li>
+        there are technical limitations that prevents us using the semantically
+        correct element
+      </li>
+    </ul>
+    <h2>how</h2>
+    <p>
+      how do we make sure that custom components have a role, a name and a
+      value?
+    </p>
+    <h2>role</h2>
+    <p>
+      in our last section, buttons a links, we learned that dropdown menu button
+      should be coded as a button. what if our framework does not allow us to do
+      that? if it forces us to use an a instead? if the navegation component in
+      the library we are using, is built with as? then we need to add a role
+    </p>
+    <p>
+      this is done with the role="button" attribute. now users of assistive
+      technologies can understand what the custom control is. a button has the
+      role="button" built in, so to write button role="button" is redundant
+    </p>
+    <h2>name</h2>
+    <p>
+      the custom control needs a name. in out example, the name is the content
+      of the element, company. as long as we have written our elements like div
+      role="button" Company div, we have a good name. this is also known as the
+      accesible name. the accesible name for our div is company. good
+    </p>
+    <p>
+      in the following login form, we have several components - a logo, a
+      heading, a label, a dropdown, an input and a button
+    </p>
+    <p>
+      we are taking a closer look at the label, dropdown and the input. visually
+      there is no clear distinction between the dropdown and the input. the
+      dropdown is coded with a select, which is a correct element for this case.
+      however, it has no name
+    </p>
+    <select name="countryCode"></select>
+    <p>
+      it has a name attribute. this is not the same as an accesible anme. the
+      name attribute is for computers. in a form, it is used as a reference when
+      the data is submitted. this name countryCode will not help any users. it
+      will not be picked up by assistive technologies
+    </p>
+    <p>
+      to give this select an accesible name, we must use the attribute
+      aria-label. normally, we would have connected a visual label to the select
+      component. in this case, there is only one visual label fot both the
+      components
+    </p>
+    <select aria-label="Country calling code" name="countryCode"></select>
+
+    <h2>value</h2>
+    <p>
+      some component have a value or a state. an accordion is open or closed.
+      this informatino has to be accesible
+    </p>
+    <p>
+      an accordion is considered a custom component. there is no standard html
+      element to use here. each accordion header should be a button or
+      role="button"
+    </p>
+    <div role="button">when do i get charged for a role</div>
+    <p>
+      good. it has the role of a button. it also has a name, the content of the
+      div. to give this button a value, we need to tell assistive technologies
+      that it is closed. this is done with aria-expanded="false"
+    </p>
+    <div role="button" aria-expanded="false">when do i get charged for a role</div>
+  </body>
+</html>
